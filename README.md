@@ -156,10 +156,22 @@ depi-react-track/
 
 <div align="center">
 
-**Amr Reda**
-*Digital Egypt Pioneers Initiative (DEPI) Trainee — Front-End React Track*
+### Amr Reda Mohamed
 
-[![GitHub](https://img.shields.io/badge/GitHub-amrreda123-181717?style=for-the-badge&logo=github)](https://github.com/amrreda123)
+🚀 **Full Stack Laravel Developer** | 🎓 **CSE Student @ Zagazig University**
+💡 Passionate about Backend Architecture & Computer Graphics
+
+<br/>
+
+[![GitHub](https://img.shields.io/badge/GitHub-amrreda123-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amrreda123)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/amrreda123)
+[![YouTube](https://img.shields.io/badge/YouTube-ElHandaza-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://youtube.com/@ElHandaza)
+
+<br/>
+
+> 🔭 Currently building a **Multi-Vendor E-commerce Platform**
+> 🌱 Currently learning **Advanced System Design & OpenGL**
+> 💬 Ask me about **MVC Architecture**, **Database Design**, or **Web Security**
 
 <br/>
 
