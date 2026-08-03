@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="./welcome.html" method="get">
+      <!--! text -->
+      <label for="fn">First name</label>
+      <input required type="text" id="fn" name="fname" />
+      <br />
+      <!--! email -->
+      <label>Email</label>
+      <input type="email" name="mail" placeholder="abc@x.com" />
+      <br />
+      <!--! password -->
+      <label>password</label>
+      <input type="password" name="pass" />
+      <br />
+      <!--! hidden -->
+      <input type="hidden" value="123456" name="id1" />
+      <br />
+      <!--  -->
+      <label for="">ID2</label>
+      <input type="text" value="123456" name="id2" readonly />
+      <br />
+      <!--  -->
+      <label for="">ID3</label>
+      <input type="text" value="123456" name="id3" disabled />
+      <br />
+      <!--! file -->
+      <label for="">CV</label>
+      <input type="file" />
+      <br />
+      <!--! radio -->
+      <p>Gender :</p>
+      <input type="radio" name="gender" value="male" />
+      <label for="">male</label>
+      <input type="radio" name="gender" value="female" />
+      <label for="">female</label>
+      <br />
+      <!--! checkbox -->
+      <p>Lang. :</p>
+      <input type="checkbox" name="lang" value="html"/>
+      <label for="">html</label>
+      <input type="checkbox" name="lang" value="css"/>
+      <label for="">css</label>
+      <input type="checkbox" name="lang" value="js"/>
+      <label for="">js</label>
+      <br />
+
+
+
+      <!--! select  -->
+      <select name="cars" id="">
+        <option selected disabled value="">Choose from cars</option>
+        <option value="BMW">BMW</option>
+        <option value="Mercides">Mercides</option>
+        <option value="Volvo">Volvo</option>
+      </select>
+      <br>
+
+      <!--! datalist -->
+      <input list="country" type="text" placeholder="الدول">
+      <datalist id="country">
+        <option value="EGY"></option>
+        <option value="KSA"></option>
+        <option value="USA"></option>
+      </datalist>
+      <br>
+
+      <!--! color -->
+
+      <input type="color">
+      <br>
+
+      <input type="range" step="0.5" min="0" max="5">
+
+
+      <!--! submit, reset -->
+      <input type="submit" value="send" />
+      <input type="reset" value="clear" />
+    </form>
+  </body>
+</html>

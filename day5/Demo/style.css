@@ -1,0 +1,17 @@
+/* h3{
+  color: white;
+  background-color: black;
+} */
+
+.en{
+  color: red;
+}
+
+.ar{
+  color: blue;
+  text-align: end;
+}
+
+#test{
+  text-align: center;
+}
