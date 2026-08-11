@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=🚀+DEPI+Front-End+React+Track;HTML+%7C+CSS+%7C+JavaScript+%7C+React.js;Learning+by+Building+%F0%9F%94%A5" alt="Typing SVG" />
+<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=🚀+DEPI+Front-End+React+Track;HTML+%7C+CSS+%7C+JavaScript+%7C+React.js;Learning+by+Building+%F0%9F%94%A5" alt="Typing SVG" />
 
 <br/>
 
@@ -46,24 +46,35 @@
 
 This repository documents my complete learning journey in the **Digital Egypt Pioneers Initiative (DEPI)** — Egypt's national scholarship program for building world-class tech talent.
 
-Every session is captured here with hands-on **demos**, **lab exercises**, and **assignments** — from the very first HTML tag all the way through to React.js.
+> **Software Development – React Frontend Web Developer**
+>
+> This profile is equipped with comprehensive knowledge of web development essentials such as HTML, CSS, and JavaScript, and specialized in building React applications. With proficiency in Git and GitHub for version control, NodeJS for server-side scripting, and an understanding of containerization with Docker and Kubernetes. The culmination of these skills is demonstrated in a capstone project, bringing React and NodeJS together to produce a real-world web application.
+
+Every session is captured here with hands-on **demos**, **lab exercises**, and **assignments**.
 
 > 💡 *"The best way to learn is to build."*
 
 ---
 
-## 🗺️ Learning Roadmap
+## 🗺️ Learning Roadmap (Official Syllabus)
 
-| Phase | Topic | Status |
-|:-----:|-------|:------:|
-| 1️⃣ | HTML Fundamentals & Structure | ✅ Done |
-| 2️⃣ | HTML Forms & Input Types | ✅ Done |
-| 3️⃣ | CSS Basics — Selectors & Styling Methods | ✅ Done |
-| 4️⃣ | CSS Layouts — Flexbox & Grid | ✅ Done |
-| 5️⃣ | JavaScript Essentials | ⏳ Coming Soon |
-| 6️⃣ | React.js Fundamentals | ⏳ Coming Soon |
+| # | Course Name | Status |
+|:-:|-------------|:------:|
+| 01 | Prompt Engineering | ⏳ Coming Soon |
+| 02 | HTML5 Essentials | ✅ Done |
+| 03 | CSS Essentials Principles of UX/UI Design | 🔄 In Progress |
+| 04 | JavaScript | ⏳ Coming Soon |
+| 05 | Typescript | ⏳ Coming Soon |
+| 06 | Bootstrap | ⏳ Coming Soon |
+| 07 | Getting Started with Git and GitHub | ✅ Done |
+| 08 | React | ⏳ Coming Soon |
+| 09 | Code style, patterns and best practices | ⏳ Coming Soon |
+| 10 | Introduction to Backend: NodeJS + Express | ⏳ Coming Soon |
+| 11 | Containerization basics using Docker | ⏳ Coming Soon |
+| 12 | Functional Documentation & Unit Testing | ⏳ Coming Soon |
+| 13 | Capstone Project | ⏳ Coming Soon |
 
-> **Overall Progress:** `████████████░░░░░░░░` **~60% Complete**
+> **Overall Progress:** `███░░░░░░░░░░░░░░░░░` **~15% Complete**
 
 ---
 
@@ -186,10 +197,14 @@ open index.html      # macOS
 
 <div align="center">
 
+<!-- GitHub Stats API is currently experiencing global downtime (Vercel Deployment Paused).
+     Uncomment these when the service is back online.
 [![GitHub Stats](https://github-readme-stats.vercel.app/api?username=amrreda123&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)](https://github.com/amrreda123)
 [![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=amrreda123&layout=compact&theme=tokyonight&hide_border=true)](https://github.com/amrreda123)
+-->
+*GitHub Stats are temporarily unavailable due to upstream API downtime.*
 
-[![GitHub Streak](https://streak-stats.demolab.com?user=amrreda123&theme=tokyonight&hide_border=true)](https://github.com/amrreda123)
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=amrreda123&theme=tokyonight&hide_border=true)](https://github.com/amrreda123)
 
 </div>
 
