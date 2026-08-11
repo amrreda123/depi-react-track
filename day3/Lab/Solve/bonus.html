@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bonus Assignment - HTML5 Layout</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: sans-serif;
+        }
+        .page-wrapper {
+            display: flex;
+            flex-direction: column;
+            min-height: 500px;
+            border: 2px solid black;
+            box-sizing: border-box;
+        }
+
+        header {
+            background-color: #798671;
+            color: darkred;
+            font-size: 24px;
+            padding: 20px;
+            text-align: center;
+            font-weight: bold;
+            border-bottom: 2px solid black;
+        }
+
+        nav {
+            background-color: #b1b6ab;
+            text-align: center;
+            padding: 5px;
+            border-bottom: 2px solid black;
+        }
+
+        .content-container {
+            display: flex;
+            flex: 1;
+        }
+
+        .left-sidebar {
+            background-color: #a3a99c;
+            width: 25%;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-right: 2px solid black;
+        }
+        .profile-section {
+            background-color: #dbe0d3;
+            width: 50%;
+            padding: 20px;
+        }
+        .right-sidebar {
+            width: 25%;
+            padding: 10px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-left: 2px solid black;
+        }
+
+        footer {
+            background-color: #798671;
+            color: darkred;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            border-top: 2px solid black;
+        }
+
+        .text-center { text-align: center; }
+        .text-darkred { color: darkred; }
+    </style>
+</head>
+<body id="top">
+    <div class="page-wrapper">
+        <header>
+            Website Logo (Image)
+        </header>
+
+        <nav>
+            <a href="home.html">home</a> |
+            <a href="contact.html">contact us</a> |
+            <a href="about.html">about</a>
+        </nav>
+
+        <main class="content-container">
+            <!-- Left Sidebar -->
+            <aside class="left-sidebar">
+                <b>My Pages online</b>
+                <br><br><br><br><br>
+                Iframe Video<br>
+                <iframe src="" width="90%" height="150"></iframe>
+            </aside>
+
+            <!-- Main Profile Section -->
+            <section class="profile-section">
+                <h3 class="text-center text-darkred">My Profile</h3>
+                <ul>
+                    <li>Name: Amr Reda</li>
+                    <li>Age: 21</li>
+                    <li>Address: Cairo</li>
+                    <li>Phones: </li>
+                    <li>Faculty: <a href="https://example.com">Your Faculty Name</a></li>
+                    <li>Hobbies: 
+                        <ol type="I">
+                            <li>First Hobby</li>
+                            <li>Second Hobby</li>
+                            <li>Third Hobby</li>
+                        </ol>
+                    </li>
+                    <li>Mail: Link <a href="mailto:amr@example.com">mail to your mail.</a></li>
+                </ul>
+            </section>
+
+            <!-- Right Sidebar -->
+            <aside class="right-sidebar">
+                News
+            </aside>
+        </main>
+
+        <footer>
+            <a href="#top" style="color: blue;">Top of page link</a> <br>
+            Copyrights © are reserved to ITI.
+        </footer>
+    </div>
+</body>
+</html>

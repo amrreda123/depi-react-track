@@ -59,11 +59,11 @@ Every session is captured here with hands-on **demos**, **lab exercises**, and *
 | 1️⃣ | HTML Fundamentals & Structure | ✅ Done |
 | 2️⃣ | HTML Forms & Input Types | ✅ Done |
 | 3️⃣ | CSS Basics — Selectors & Styling Methods | ✅ Done |
-| 4️⃣ | CSS Layouts — Flexbox & Grid | 🔄 In Progress |
+| 4️⃣ | CSS Layouts — Flexbox & Grid | ✅ Done |
 | 5️⃣ | JavaScript Essentials | ⏳ Coming Soon |
 | 6️⃣ | React.js Fundamentals | ⏳ Coming Soon |
 
-> **Overall Progress:** `██████████░░░░░░░░░░` **~45% Complete**
+> **Overall Progress:** `████████████░░░░░░░░` **~60% Complete**
 
 ---
 
@@ -88,7 +88,7 @@ depi-react-track/
 │   ├── Demo/
 │   │   └── index.html          ── HTML basics demo
 │   ├── Lab/
-│   │   └── index.html          ── Day 1 lab assignment
+│   │   └── Solve/              ── Day 1 lab assignment solutions
 │   └── Slides/
 │
 ├── 📂 day2/
@@ -96,7 +96,7 @@ depi-react-track/
 │   │   ├── index.html          ── HTML tables & links demo
 │   │   └── about.html
 │   ├── Lab/
-│   │   └── PersonalWebsite/    ── Personal website lab assignment
+│   │   └── Solve/              ── Personal website lab assignment
 │   └── Slides/
 │
 ├── 📂 day3/
@@ -104,8 +104,7 @@ depi-react-track/
 │   │   ├── index.html          ── HTML media elements (audio, video, iframe)
 │   │   └── about.html
 │   └── Lab/
-│       ├── index.html          ── Table layout assignment
-│       └── bonus.html          ── HTML5 semantic layout (Bonus)
+│       └── Solve/              ── Table layout & HTML5 semantic layout assignment
 │
 ├── 📂 day4/
 │   └── Demo/
@@ -121,6 +120,13 @@ depi-react-track/
 │   └── Slides/
 │       └── Whiteboard.png
 │
+├── 📂 day6,7/
+│   ├── Demo/                   ── CSS Flexbox & Grid demo
+│   ├── Lab/                    ── CSS Layouts assignments
+│   └── Slides/
+│
+├── 📂 SoftSkills/              ── Non-Technical Assignments
+│
 └── 📄 README.md
 ```
 
@@ -135,7 +141,7 @@ depi-react-track/
 | 3 | Day 3 | Media Elements, Semantic HTML5 & CSS Flexbox | ✅ | ✅ | ✅ Done |
 | 4 | Day 4 | HTML Forms & Input Types | ✅ | — | ✅ Done |
 | 5 | Day 5 | CSS Basics — Inline, Internal & External Styles | ✅ | ✅ | ✅ Done |
-| 6 | Day 6+ | CSS Layouts — Flexbox & Grid | ⏳ | ⏳ | 🔄 In Progress |
+| 6 | Day 6 & 7 | CSS Layouts — Flexbox & Grid | ✅ | ✅ | ✅ Done |
 
 ---
 

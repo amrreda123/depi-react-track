@@ -1,0 +1,75 @@
+.test {
+}
+#t1 {
+}
+t1 {
+}
+
+input[name="fname"] {
+  background-color: green;
+}
+
+/* a[href="www.linkedIn.com"]{
+  color: red;
+} */
+/* 
+a[href*="link"]{
+  color: white;
+  background-color: black;
+} */
+[href^="www"] {
+  color: red;
+  background-color: black;
+}
+[href$="eg"] {
+  color: green;
+}
+
+img[src=""]{}
+[src=""]{}
+
+
+
+/* div p{
+  color: blue;
+}
+div>p{
+  color: red;
+} */
+
+
+
+div~h3{
+  color: blue;
+}
+div+h3{
+  color: red;
+}
+
+
+/* .test~span{} */
+
+div, span, .test, #t1{}
+
+/* *{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+/* a:hover{
+  color: white;
+  background-color: black;
+} */
+
+/* a:visited{
+  color: red;
+} */
+/* a:active{
+  color: red;
+} */
+
+/* input:focus{
+  background-color: green;
+} */
+
