@@ -21,7 +21,7 @@
 ![Status](https://img.shields.io/badge/Status-🟢%20Active-brightgreen?style=flat-square)
 ![Track](https://img.shields.io/badge/Track-Front--End%20React-61DAFB?style=flat-square&logo=react)
 ![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue?style=flat-square)
-![Days Completed](https://img.shields.io/badge/Days%20Completed-5-orange?style=flat-square)
+![Days Completed](https://img.shields.io/badge/Days%20Completed-7-orange?style=flat-square)
 
 </div>
 

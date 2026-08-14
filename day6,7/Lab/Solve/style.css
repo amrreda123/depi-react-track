@@ -1,0 +1,180 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+header {
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li a {
+    color:#3d5d50;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+nav ul li a:hover{
+    color: #000;
+}
+/* ------------------------ */
+.hero-bg {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../i02.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #fff;
+    width: 100%;
+    max-width: 1200px; 
+    padding: 0 20px; 
+}
+.hero-section .hero-title{
+    font-size: 50px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.hero-section .hero-description{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.hero-button{
+    background-color: #a4cc3f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* -------------------- */
+.insurance-section {
+    padding: 60px 0; 
+    background-color: #fcfcfc; 
+}
+
+.insurance-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+
+.insurance-section .content {
+    width: 50%; 
+}
+
+.insurance-title {
+    color: #f7941d;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.insurance-section ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.insurance-section ul li {
+    font-size: 16px;
+    font-weight: bold;
+    color: #55786a;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+}
+
+
+.insurance-section p {
+    color: #666;
+    line-height: 1.6; 
+    margin-bottom: 30px;
+}
+
+
+.insurance-section .image-box {
+    width: 50%;
+}
+
+.insurance-section .image-box img {
+    width: 100%;
+    display: block;
+}
+
+/* -------------------- */
+.services-section{
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.service-box{
+    color: #fff;
+    background-color: #3d5d50;
+    width: 33.333%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 40px;
+}
+.service-box h2,
+.service-box p{
+    line-height: 2;
+}
+.care-image{
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+
+.claims-image{
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+.business-image{
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: multiply;
+}
+.care-image:hover{
+      background-color: #a4cc3f;
+    background-image: url(../i05.jpg);
+}
+.claims-image:hover{
+    background-color: #a4cc3f;
+    background-image: url(../i06.jpg);
+}
+.business-image:hover{
+    background-color: #a4cc3f;
+    background-image: url(../i07.jpg);
+}

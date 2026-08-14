@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 600px;
+        }
+
+        div.form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: inline-block;
+            width: 150px;
+            font-weight: bold;
+        }
+
+        fieldset {
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            padding: 10px;
+        }
+
+        legend {
+            font-weight: bold;
+        }
+
+        .inline-label {
+            width: auto;
+            font-weight: normal;
+        }
+
+        .explanation {
+            margin-top: 40px;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border-left: 4px solid #007bff;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Registration Form</h1>
+    <form action="Thankyou.htm" method="get">
+        <input type="hidden" name="user_id" value="12345">
+
+        <div class="form-group">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname" name="fname" required tabindex="1" accesskey="f"
+                placeholder="Enter first name">
+        </div>
+
+        <div class="form-group">
+            <label for="lname">Last Name:</label>
+            <input type="text" id="lname" name="lname" required tabindex="2" accesskey="l"
+                placeholder="Enter last name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required tabindex="3" accesskey="e"
+                placeholder="example@domain.com">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" id="pwd" name="pwd" required tabindex="4" accesskey="p">
+        </div>
+
+        <div class="form-group">
+            <label for="pwd2">Repeat password:</label>
+            <input type="password" id="pwd2" name="pwd2" required tabindex="5">
+        </div>
+
+        <div class="form-group">
+            <label for="bdate">Birth Date:</label>
+            <input type="date" id="bdate" name="bdate" tabindex="6" accesskey="d">
+        </div>
+
+        <div class="form-group">
+            <label for="upic">User Picture:</label>
+            <input type="file" id="upic" name="upic" tabindex="7" accesskey="u">
+        </div>
+
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" id="male" name="gender" value="male" tabindex="8">
+            <label for="male" class="inline-label">Male</label>
+            <input type="radio" id="female" name="gender" value="female" tabindex="9">
+            <label for="female" class="inline-label">Female</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="faculty">Faculty:</label>
+            <select id="faculty" name="faculty" tabindex="10" accesskey="c">
+                <option value="">Select Faculty</option>
+                <option value="engineering">Engineering</option>
+                <option value="science">Science</option>
+                <option value="arts">Arts</option>
+                <option value="commerce">Commerce</option>
+            </select>
+        </div>
+
+        <fieldset>
+            <legend>Interests</legend>
+            <input type="checkbox" id="prog" name="interests" value="programming" tabindex="11">
+            <label for="prog" class="inline-label">Programming</label><br>
+            <input type="checkbox" id="read" name="interests" value="reading" tabindex="12">
+            <label for="read" class="inline-label">Reading</label><br>
+            <input type="checkbox" id="swim" name="interests" value="swimming" tabindex="13">
+            <label for="swim" class="inline-label">Swimming</label>
+        </fieldset>
+
+        <div class="form-group">
+            <label for="about" style="vertical-align: top;">About you:</label>
+            <textarea id="about" name="about" rows="4" cols="40" tabindex="14" accesskey="a"
+                placeholder="Tell us about yourself..."></textarea>
+        </div>
+
+        <div class="form-group">
+            <input type="checkbox" id="terms" name="terms" required tabindex="15">
+            <label for="terms" class="inline-label">I agreed to <a href="terms.html" target="_blank" tabindex="-1">terms
+                    and condition</a></label>
+        </div>
+
+        <div class="form-group">
+            <input type="submit" value="Submit" tabindex="16" accesskey="s">
+            <input type="reset" value="Reset" tabindex="17" accesskey="r">
+        </div>
+    </form>
+
+    <div class="explanation">
+        <h3>Differences between GET and POST methods:</h3>
+        <ul>
+            <li><strong>GET:</strong> Appends form-data into the URL in name/value pairs. Length of a URL is limited.
+                Never use GET to send sensitive data (like passwords). Useful for form submissions where a user wants to
+                bookmark the result.</li>
+            <li><strong>POST:</strong> Appends form-data inside the body of the HTTP request (data is not shown in URL).
+                Has no size limitations. More secure than GET because user-input is not visible in URL.</li>
+        </ul>
+    </div>
+</body>
+
+</html>
