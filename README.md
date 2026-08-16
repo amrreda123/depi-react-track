@@ -1,240 +1,181 @@
+<!-- Header Section -->
 <div align="center">
+  
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=00D4FF&height=200&section=header&text=DEPI%20React%20Track%20Journey&fontSize=50&fontAlignY=35&animation=twinkling&fontColor=ffffff" width="100%"/>
 
-<img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=28&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=🚀+DEPI+Front-End+React+Track;HTML+%7C+CSS+%7C+JavaScript+%7C+React.js;Learning+by+Building+%F0%9F%94%A5" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=24&duration=3000&pause=1000&color=00D4FF&center=true&vCenter=true&width=700&lines=🚀+Front-End+React+Developer;Laravel+Backend+Enthusiast;Building+Scalable+Web+Applications;Turning+Ideas+into+Digital+Reality" alt="Typing SVG" />
 
-<br/>
+  <br/>
 
-# Digital Egypt Pioneers Initiative — DEPI
-### 🎓 Front-End React Track | Training Repository
+  [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amr-reda-b43aa4357/)
+  [![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Eng_amr_reda)
+  [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amrreda123)
+  [![Portfolio](https://img.shields.io/badge/Portfolio-Visit-00D4FF?style=for-the-badge&logo=vercel&logoColor=white)](#)
 
-<br/>
+  <br/><br/>
 
-[![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/HTML)
-[![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://developer.mozilla.org/en-US/docs/Web/CSS)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
-[![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)](https://git-scm.com/)
-[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amrreda123)
-
-<br/>
-
-![Status](https://img.shields.io/badge/Status-🟢%20Active-brightgreen?style=flat-square)
-![Track](https://img.shields.io/badge/Track-Front--End%20React-61DAFB?style=flat-square&logo=react)
-![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue?style=flat-square)
-![Days Completed](https://img.shields.io/badge/Days%20Completed-7-orange?style=flat-square)
+  ![Status](https://img.shields.io/badge/Status-🟢%20Active-brightgreen?style=flat-square)
+  ![Track](https://img.shields.io/badge/Track-Front--End%20React-61DAFB?style=flat-square&logo=react)
+  ![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue?style=flat-square)
+  ![Days Completed](https://img.shields.io/badge/Days%20Completed-7-orange?style=flat-square)
 
 </div>
 
 ---
 
-## 📌 Table of Contents
+## 👨‍💻 About Me & This Repository
 
-- [🎯 About](#-about-the-repository)
-- [🗺️ Learning Roadmap](#%EF%B8%8F-learning-roadmap)
-- [💻 Technologies](#-technologies--stack)
-- [📁 Repository Structure](#-repository-structure)
-- [📝 Daily Progress](#-daily-progress)
-- [🚀 How to Run](#-how-to-run-locally)
-- [📢 إعلان مهم](#-إعلان-مهم)
-- [🔗 روابط مهمة](#-روابط-مهمة)
-- [📊 GitHub Stats](#-github-stats)
-- [👤 Author](#-author)
+Welcome to my **Digital Egypt Pioneers Initiative (DEPI)** learning repository! I am **Amr Reda Mohamed**, a CSE Student at Zagazig University, and a passionate **Full Stack Web Developer**. 
+
+This repository isn't just a collection of code; it's a **living portfolio** of my journey mastering Frontend React Development. It showcases my ability to write clean, maintainable code, solve complex problems, and continuously upskill in modern web technologies.
+
+> **💡 My Goal:** To build scalable, high-performance web applications with clean architecture and seamless user experiences that drive real business growth.
 
 ---
 
-## 🎯 About The Repository
+## 🛠️ Technical Arsenal
 
-This repository documents my complete learning journey in the **Digital Egypt Pioneers Initiative (DEPI)** — Egypt's national scholarship program for building world-class tech talent.
+<div align="center">
 
-> **Software Development – React Frontend Web Developer**
->
-> This profile is equipped with comprehensive knowledge of web development essentials such as HTML, CSS, and JavaScript, and specialized in building React applications. With proficiency in Git and GitHub for version control, NodeJS for server-side scripting, and an understanding of containerization with Docker and Kubernetes. The culmination of these skills is demonstrated in a capstone project, bringing React and NodeJS together to produce a real-world web application.
+### 💻 **Frontend & UI**
+<img src="https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white" />
+<img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
+<img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black" />
+<img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
+<img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white" />
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" />
 
-Every session is captured here with hands-on **demos**, **lab exercises**, and **assignments**.
+### ⚙️ **Backend & Databases**
+<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" />
+<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" />
+<img src="https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" />
+<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" />
 
-> 💡 *"The best way to learn is to build."*
+### 🧰 **Tools & Version Control**
+<img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" />
+<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" />
+<img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" />
 
----
-
-## 🗺️ Learning Roadmap (Official Syllabus)
-
-| # | Course Name | Status |
-|:-:|-------------|:------:|
-| 01 | Prompt Engineering | ⏳ Coming Soon |
-| 02 | HTML5 Essentials | ✅ Done |
-| 03 | CSS Essentials Principles of UX/UI Design | 🔄 In Progress |
-| 04 | JavaScript | ⏳ Coming Soon |
-| 05 | Typescript | ⏳ Coming Soon |
-| 06 | Bootstrap | ⏳ Coming Soon |
-| 07 | Getting Started with Git and GitHub | ✅ Done |
-| 08 | React | ⏳ Coming Soon |
-| 09 | Code style, patterns and best practices | ⏳ Coming Soon |
-| 10 | Introduction to Backend: NodeJS + Express | ⏳ Coming Soon |
-| 11 | Containerization basics using Docker | ⏳ Coming Soon |
-| 12 | Functional Documentation & Unit Testing | ⏳ Coming Soon |
-| 13 | Capstone Project | ⏳ Coming Soon |
-
-> **Overall Progress:** `███░░░░░░░░░░░░░░░░░` **~15% Complete**
+</div>
 
 ---
 
-## 💻 Technologies & Stack
+## 🗺️ Learning Roadmap & Progress
 
-| Category | Details |
-|:--------:|---------|
-| 🖥️ **Frontend** | HTML5, CSS3 |
-| 🧠 **Concepts** | Semantic HTML, Table Layouts, Forms, Media Elements, CSS Flexbox |
-| 🎨 **Styling** | Inline, Internal & External CSS, Selectors, Specificity |
-| 🔧 **Version Control** | Git & GitHub |
-| 🔜 **Coming Soon** | JavaScript ES6+, React.js, Vite |
+Here is my structured journey through the DEPI React Track. I believe in documenting progress to stay accountable and organized.
+
+| Module | Topic | Status | Mastery Level |
+|:------:|:------|:------:|:-------------:|
+| 🧠 | **Prompt Engineering** | ⏳ Pending | ░░░░░░░░░░ |
+| 🏗️ | **HTML5 Essentials** | ✅ Done | ██████████ |
+| 🎨 | **CSS & UI/UX Principles** | ✅ Done | ██████████ |
+| ⚡ | **JavaScript Deep Dive** | ⏳ Pending | ░░░░░░░░░░ |
+| 📘 | **TypeScript** | ⏳ Pending | ░░░░░░░░░░ |
+| 📱 | **Bootstrap Framework** | ⏳ Pending | ░░░░░░░░░░ |
+| 🔄 | **Git & GitHub** | ✅ Done | ██████████ |
+| ⚛️ | **React.js Mastery** | ⏳ Pending | ░░░░░░░░░░ |
+| 🛠️ | **Best Practices & Patterns** | ⏳ Pending | ░░░░░░░░░░ |
+| 🚀 | **NodeJS & Express Basics** | ⏳ Pending | ░░░░░░░░░░ |
+| 🐳 | **Docker Containerization** | ⏳ Pending | ░░░░░░░░░░ |
+| 🧪 | **Unit Testing** | ⏳ Pending | ░░░░░░░░░░ |
+| 🏆 | **Capstone Project** | ⏳ Pending | ░░░░░░░░░░ |
+
+> **Overall Progress:** `████░░░░░░░░░░░░░░░░` **~25% Complete**
 
 ---
 
-## 📁 Repository Structure
+## 📂 Repository Architecture
 
-```
+I maintain a strict, professional folder structure so that any recruiter or developer can easily navigate my code.
+
+```text
 depi-react-track/
+├── 📁 Technical/             # Tech Track Assignments & Demos
+│   ├── 📂 day 1/             # HTML Basics
+│   ├── 📂 day 2/             # Tables & Links
+│   ├── 📂 day 3/             # Media Elements & IFrames
+│   ├── 📂 day 4/             # HTML Forms
+│   ├── 📂 day 5/             # CSS Fundamentals
+│   ├── 📂 day 6/             # CSS Flexbox
+│   ├── 📂 day 7/             # CSS Grid Layouts
+│   └── 📂 day 8/             # Advanced Styling & Practical
 │
-├── 📂 day1/
-│   ├── Demo/
-│   │   └── index.html          ── HTML basics demo
-│   ├── Lab/
-│   │   └── Solve/              ── Day 1 lab assignment solutions
-│   └── Slides/
+├── 📁 SoftSkills/            # Non-Technical Assignments
+│   ├── 📂 Week 1 - Session 1/
+│   ├── 📂 Week 2 - Session 2/
+│   ├── 📂 Week 3 - Session 3/
+│   └── 📂 Week 4 - Session 4/
 │
-├── 📂 day2/
-│   ├── Demo/
-│   │   ├── index.html          ── HTML tables & links demo
-│   │   └── about.html
-│   ├── Lab/
-│   │   └── Solve/              ── Personal website lab assignment
-│   └── Slides/
-│
-├── 📂 day3/
-│   ├── Demo/
-│   │   ├── index.html          ── HTML media elements (audio, video, iframe)
-│   │   └── about.html
-│   └── Lab/
-│       └── Solve/              ── Table layout & HTML5 semantic layout assignment
-│
-├── 📂 day4/
-│   └── Demo/
-│       ├── index.html          ── HTML Forms (inputs, radio, checkbox, select, datalist)
-│       └── welcome.html        ── Form submission result page
-│
-├── 📂 day5/
-│   ├── Demo/
-│   │   ├── index.html          ── CSS styling methods (inline, internal, external)
-│   │   ├── about.html
-│   │   └── style.css
-│   ├── Lab/
-│   └── Slides/
-│       └── Whiteboard.png
-│
-├── 📂 day6,7/
-│   ├── Demo/                   ── CSS Flexbox & Grid demo
-│   ├── Lab/                    ── CSS Layouts assignments
-│   └── Slides/
-│
-├── 📂 SoftSkills/              ── Non-Technical Assignments
-│
-└── 📄 README.md
+└── 📄 README.md              # You are here!
 ```
 
 ---
 
-## 📝 Daily Progress
+## 📈 Daily Progress & Highlights
 
-| # | Day | Topic | Demo | Lab | Status |
-|:-:|:---:|-------|:----:|:---:|:------:|
-| 1 | Day 1 | HTML Basics & Structure | ✅ | ✅ | ✅ Done |
-| 2 | Day 2 | Tables, Links & Personal Website | ✅ | ✅ | ✅ Done |
-| 3 | Day 3 | Media Elements, Semantic HTML5 & CSS Flexbox | ✅ | ✅ | ✅ Done |
-| 4 | Day 4 | HTML Forms & Input Types | ✅ | — | ✅ Done |
-| 5 | Day 5 | CSS Basics — Inline, Internal & External Styles | ✅ | ✅ | ✅ Done |
-| 6 | Day 6 & 7 | CSS Layouts — Flexbox & Grid | ✅ | ✅ | ✅ Done |
+<details>
+<summary><b>✨ Click to expand the Daily Log</b></summary>
+
+| # | Day | Core Concept | Output | Status |
+|:-:|:---:|:-------------|:------:|:------:|
+| 1 | Day 1 | Semantic HTML Basics & Page Structure | Built a structured webpage | ✅ Done |
+| 2 | Day 2 | Advanced HTML: Tables & Links | Created a Personal Website layout | ✅ Done |
+| 3 | Day 3 | Media Elements & IFrames | Integrated rich media components | ✅ Done |
+| 4 | Day 4 | HTML Forms & Validation | Built comprehensive user inputs | ✅ Done |
+| 5 | Day 5 | CSS Fundamentals & Selectors | Styled web pages efficiently | ✅ Done |
+| 6 | Day 6,7 | Modern CSS: Flexbox & Grid | Built responsive layouts | ✅ Done |
+
+</details>
 
 ---
 
-## 🚀 How to Run Locally
+## 🚀 Run My Code Locally
 
-```sh
+Want to see my work in action? It's incredibly simple! No build steps required for the current modules.
+
+```bash
 # 1. Clone the repository
 git clone https://github.com/amrreda123/depi-react-track.git
 
-# 2. Navigate into any day's folder
-cd depi-react-track/day1/Demo
+# 2. Navigate to any demo or lab
+cd depi-react-track/Technical/"day 1"/Demo
 
-# 3. Open in browser (no build step needed!)
+# 3. Open in your default browser
 start index.html     # Windows
-open index.html      # macOS
+open index.html      # macOS / Linux
 ```
 
 ---
 
-## 📢 إعلان مهم
+## 🌟 Why Collaborate With Me?
 
-> [!IMPORTANT]
-> 🎓 **تم تسجيل جميع المتدربين على المنصة التعليمية** الخاصة بالجزء الـ **Non-Technical**.
->
-> يمكنكم الآن تسجيل الدخول والبدء في رحلتكم التعليمية من خلال الرابط التالي:
->
-> 🔗 **[depi.eyouthbusiness.com/login](https://depi.eyouthbusiness.com/login)**
+- **Clean Code Advocate:** I write code for humans first, machines second.
+- **Problem Solver:** I enjoy tackling complex architectural challenges and debugging.
+- **Continuous Learner:** Technology moves fast, and I move with it. Constantly exploring new frameworks and design patterns.
+- **Team Player:** Equipped with strong communication and soft skills, making me a reliable team member.
 
 ---
 
-## 🔗 روابط مهمة
+## 🔗 Important Links
 
-| # | المصدر | الوصف | الرابط |
-|:-:|:------:|-------|:------:|
-| 1 | 📂 Drive الكورس | ملفات ومواد الكورس | [**فتح الـ Drive**](https://drive.google.com/drive/folders/1z7ZRMcsXUeLy-XQl0YfEFPkwanc92Kdp?usp=drive_link) |
-| 2 | 📚 Material الوزارة | المواد الرسمية من وزارة الاتصالات | [**فتح Material الوزارة**](https://drive.google.com/drive/folders/1p_-shI2Xb8HS9pw8zrLpBBLk53ed2diI?usp=drive_link) |
-| 3 | 🌐 المنصة التعليمية | الجزء الـ Non-Technical | [**تسجيل الدخول**](https://depi.eyouthbusiness.com/login) |
+- 🌐 **[DEPI Learning Platform](https://depi.eyouthbusiness.com/login)**
+- 📂 **[Course Materials Drive](https://drive.google.com/drive/folders/1z7ZRMcsXUeLy-XQl0YfEFPkwanc92Kdp?usp=drive_link)**
+- 📚 **[Ministry Official Materials](https://drive.google.com/drive/folders/1p_-shI2Xb8HS9pw8zrLpBBLk53ed2diI?usp=drive_link)**
 
 ---
-
-## 📊 GitHub Stats
 
 <div align="center">
 
-<!-- GitHub Stats API is currently experiencing global downtime (Vercel Deployment Paused).
-     Uncomment these when the service is back online.
-[![GitHub Stats](https://github-readme-stats.vercel.app/api?username=amrreda123&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)](https://github.com/amrreda123)
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=amrreda123&layout=compact&theme=tokyonight&hide_border=true)](https://github.com/amrreda123)
--->
-*GitHub Stats are temporarily unavailable due to upstream API downtime.*
+### 📊 GitHub Activity
+<img src="https://github-readme-stats.vercel.app/api?username=amrreda123&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="48%" />
+<img src="https://github-readme-streak-stats.herokuapp.com?user=amrreda123&theme=tokyonight&hide_border=true" width="48%" />
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=amrreda123&theme=tokyonight&hide_border=true)](https://github.com/amrreda123)
+<br/><br/>
 
-</div>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=00D4FF&height=100&section=footer" width="100%"/>
 
----
+**Created with ❤️ by [Amr Reda](https://github.com/amrreda123)**
 
-## 👤 Author
-
-<div align="center">
-
-### Amr Reda Mohamed
-
-🚀 **Full Stack Laravel Developer** | 🎓 **CSE Student @ Zagazig University**
-💡 Passionate about Backend Architecture & Computer Graphics
-
-<br/>
-
-[![GitHub](https://img.shields.io/badge/GitHub-amrreda123-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/amrreda123)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/amr-reda-b43aa4357/)
-[![YouTube](https://img.shields.io/badge/YouTube-Eng__amr__reda-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@Eng_amr_reda)
-
-<br/>
-
-| 🔭 Currently Building | 🌱 Currently Learning | 💬 Ask Me About |
-|:---------------------:|:---------------------:|:---------------:|
-| Multi-Vendor E-commerce Platform | Advanced System Design & OpenGL | MVC Architecture, Database Design, Web Security |
-
-<br/>
-
----
-
-*⭐ If you find this helpful, consider giving the repo a star — it means a lot!*
+*If you like this repository, feel free to leave a ⭐!*
 
 </div>
