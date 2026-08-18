@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مرجع مهارات التوثيق وإدارة المشاريع</title>
+    <!-- استدعاء Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استدعاء خط Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .left-border-blue {
+            border-right: 4px solid #3B82F6; 
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen pb-10">
+
+    <!-- شريط التنقل (Navigation) -->
+    <nav class="bg-white shadow-sm mb-8 py-4 sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 flex flex-wrap justify-center gap-2 text-sm font-bold">
+            <a href="Quiz 01 Bio.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">1. Bio (النبذة)</a>
+            <a href="Quiz 02 proposals.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">2. Proposals (العروض)</a>
+            <a href="Quiz 03 Documentation.html" class="px-4 py-2 rounded-full bg-blue-600 text-white shadow transition duration-300">3. Documentation (التوثيق)</a>
+            <a href="Quiz 04  Emails.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">4. Emails (الإيميلات)</a>
+            <a href="Quiz 05 meetings.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">5. Meetings (الاجتماعات)</a>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-100">
+        
+        <!-- الهيدر -->
+        <div class="bg-blue-600 px-6 py-8 text-center text-white">
+            <h1 class="text-3xl font-bold mb-2">📁 مرجع التوثيق وإدارة المشاريع للمستقلين</h1>
+            <p class="text-blue-100">دليلك الشامل لكتابة التقارير وإدارة دورة حياة المشروع باحترافية</p>
+        </div>
+
+        <div class="p-8 space-y-10">
+            
+            <!-- القسم الأول: قاموس المصطلحات -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">1. قاموس إدارة المشاريع (كلمات مفتاحية للحفظ)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <strong class="text-blue-700 text-lg">Kick-off</strong>
+                        <p class="text-gray-600 mt-1">اجتماع أو وثيقة بداية المشروع للاتفاق على الأهداف.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <strong class="text-blue-700 text-lg">Mid-project</strong>
+                        <p class="text-gray-600 mt-1">مرحلة أو تقرير منتصف المشروع لتوضيح ما تم إنجازه.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <strong class="text-blue-700 text-lg">Final Deliverables</strong>
+                        <p class="text-gray-600 mt-1">التسليمات النهائية للشغل المتفق عليه.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <strong class="text-blue-700 text-lg">Project Completion</strong>
+                        <p class="text-gray-600 mt-1">وثيقة إغلاق المشروع نهائياً بعد التسليم.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <strong class="text-blue-700 text-lg">Client Action Required</strong>
+                        <p class="text-gray-600 mt-1">قسم في التقرير مخصص لطلب قرارات أو ملفات من العميل.</p>
+                    </div>
+                    <div class="bg-blue-50 p-4 rounded-lg border border-blue-100">
+                        <strong class="text-blue-700 text-lg">Suggestions for Future Work</strong>
+                        <p class="text-gray-600 mt-1">اقتراحات تطويرية تُكتب في وثيقة الإغلاق لجلب مشاريع مستقبلية.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- القسم الثاني: ترتيب تقرير منتصف المشروع -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">2. الهيكل القياسي لتقرير منتصف المشروع (Mid-project)</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                        <div class="text-xl font-bold text-blue-600 w-8">1</div>
+                        <div><strong class="text-gray-900">Status Overview:</strong> <span class="text-gray-700">نظرة عامة سريعة على حالة المشروع.</span></div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                        <div class="text-xl font-bold text-blue-600 w-8">2</div>
+                        <div><strong class="text-gray-900">Completed Tasks:</strong> <span class="text-gray-700">سرد المهام التي تم الانتهاء منها منذ آخر تحديث.</span></div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                        <div class="text-xl font-bold text-blue-600 w-8">3</div>
+                        <div><strong class="text-gray-900">Challenges & Solutions:</strong> <span class="text-gray-700">المشاكل التي واجهتك وكيف قمت بحلها (يُظهر احترافيتك).</span></div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                        <div class="text-xl font-bold text-blue-600 w-8">4</div>
+                        <div><strong class="text-gray-900">Next Steps:</strong> <span class="text-gray-700">الخطوات والمهام القادمة.</span></div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                        <div class="text-xl font-bold text-blue-600 w-8">5</div>
+                        <div><strong class="text-gray-900">Client Action Required:</strong> <span class="text-gray-700">أي طلبات تحتاجها من العميل للاستمرار.</span></div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                        <div class="text-xl font-bold text-blue-600 w-8">6</div>
+                        <div><strong class="text-gray-900">Attachments:</strong> <span class="text-gray-700">المرفقات (صور، روابط، ملفات).</span></div>
+                    </div>
+                    <div class="flex items-center bg-gray-50 p-3 rounded-lg border border-gray-200">
+                        <div class="text-xl font-bold text-blue-600 w-8">7</div>
+                        <div><strong class="text-gray-900">Closing Remarks:</strong> <span class="text-gray-700">الملاحظات الختامية (مثل: تواصل معي إذا كان لديك استفسار).</span></div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- القسم الثالث: قواعد ذهبية -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-blue-500 pb-2 mb-4">3. قواعد ذهبية لا غنى عنها</h2>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 left-border-blue">
+                        <strong class="text-gray-900">افصل الفلوس عن التقارير:</strong> إياك أن تذكر تفاصيل الدفع (Payment) داخل تقارير المشروع (مثل Mid-project). الأمور المالية مكانها الفواتير (Invoices) ورسائل منفصلة.
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 left-border-blue">
+                        <strong class="text-gray-900">لا تحذف نظرة المشروع العامة:</strong> في وثيقة إغلاق المشروع (Project Completion)، قسم الـ "Project Overview" ضروري جداً لتلخيص نطاق وأهداف المشروع التي تم تحقيقها.
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 left-border-blue">
+                        <strong class="text-gray-900">وثّق التعديلات:</strong> إذا طلب العميل تعديلات بسيطة، قم بتسجيلها في قسم "Feedback Received" لضمان عدم نسيانها وتوثيق طلباته.
+                    </li>
+                </ul>
+            </section>
+
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>

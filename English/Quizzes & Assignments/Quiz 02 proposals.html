@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>روشتة كتابة عروض العمل (Proposals)</title>
+    <!-- استدعاء Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- استدعاء خط Cairo -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+        .left-border-green {
+            border-right: 4px solid #10B981; /* استخدمت لون مختلف (أخضر) للتمييز عن الصفحة الأولى */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 min-h-screen pb-10">
+
+    <!-- شريط التنقل (Navigation) -->
+    <nav class="bg-white shadow-sm mb-8 py-4 sticky top-0 z-50 border-b border-gray-200">
+        <div class="max-w-6xl mx-auto px-4 flex flex-wrap justify-center gap-2 text-sm font-bold">
+            <a href="Quiz 01 Bio.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">1. Bio (النبذة)</a>
+            <a href="Quiz 02 proposals.html" class="px-4 py-2 rounded-full bg-emerald-600 text-white shadow transition duration-300">2. Proposals (العروض)</a>
+            <a href="Quiz 03 Documentation.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">3. Documentation (التوثيق)</a>
+            <a href="Quiz 04  Emails.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">4. Emails (الإيميلات)</a>
+            <a href="Quiz 05 meetings.html" class="px-4 py-2 rounded-full text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition duration-300">5. Meetings (الاجتماعات)</a>
+        </div>
+    </nav>
+
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="bg-white shadow-2xl rounded-2xl overflow-hidden border border-gray-100">
+        
+        <!-- الهيدر -->
+        <div class="bg-emerald-600 px-6 py-8 text-center text-white">
+            <h1 class="text-3xl font-bold mb-2">🎯 روشتة كتابة عروض العمل (Proposals)</h1>
+            <p class="text-emerald-100">كيف تكتب عرضاً يخطف انتباه العميل وتحصل على المشروع</p>
+        </div>
+
+        <div class="p-8 space-y-10">
+            
+            <!-- القسم الأول: المصطلحات الهامة -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-emerald-500 pb-2 mb-4">1. قاموس الفريلانسر (مصطلحات هامة للحفظ)</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <strong class="text-emerald-700 text-lg">Proposal</strong>
+                        <p class="text-gray-600 mt-1">عرض العمل أو المقترح اللي بتقدمه للعميل عشان تقنعه يشغلك في المشروع.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <strong class="text-emerald-700 text-lg">Hook</strong>
+                        <p class="text-gray-600 mt-1">الخُطاف؛ الجملة الافتتاحية اللي بتخطف عين العميل وتخليه يكمل قراءة.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <strong class="text-emerald-700 text-lg">Job Requirement</strong>
+                        <p class="text-gray-600 mt-1">المتطلب الوظيفي أو المهارات التقنية الأساسية (Hard Skills) زي إجادة لغة معينة أو أداة برمجية.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <strong class="text-emerald-700 text-lg">Personal Skill</strong>
+                        <p class="text-gray-600 mt-1">المهارات الشخصية (Soft Skills) زي الاهتمام بالتفاصيل أو القدرة على اتباع التعليمات.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <strong class="text-emerald-700 text-lg">Direct Client Request</strong>
+                        <p class="text-gray-600 mt-1">طلب مباشر من العميل في الوصف، زي "أرسل سابقة أعمالك"، وده لازم يتنفذ فوراً في العرض.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg border border-gray-200">
+                        <strong class="text-emerald-700 text-lg">Technical Jargon</strong>
+                        <p class="text-gray-600 mt-1">المصطلحات التقنية المعقدة. يجب تجنبها لو كان العميل مستعجل وبيطلب تواصل واضح وبسيط.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- القسم الثاني: نموذج HURLEC -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-emerald-500 pb-2 mb-4">2. الهيكل السحري للعرض (نموذج HURLEC)</h2>
+                <div class="space-y-3">
+                    <div class="flex items-center bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                        <div class="text-2xl font-black text-emerald-600 w-12 text-center">H</div>
+                        <div>
+                            <strong class="text-gray-900">Hook (الخُطاف):</strong> <span class="text-gray-700">ابدأ بسؤال قوي يقدم نتيجة ملموسة. (مثال: Want to boost your engagement by 50%?)</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                        <div class="text-2xl font-black text-emerald-600 w-12 text-center">U</div>
+                        <div>
+                            <strong class="text-gray-900">Understanding (الفهم):</strong> <span class="text-gray-700">أثبت للعميل إنك قرأت مشكلته وفهمت احتياجاته بوضوح.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                        <div class="text-2xl font-black text-emerald-600 w-12 text-center">R</div>
+                        <div>
+                            <strong class="text-gray-900">Result (النتيجة):</strong> <span class="text-gray-700">اشرح الحل الذي ستقدمه والنتائج النهائية التي سيحصل عليها.</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                        <div class="text-2xl font-black text-emerald-600 w-12 text-center">L</div>
+                        <div>
+                            <strong class="text-gray-900">Link (الرابط):</strong> <span class="text-gray-700">اربط حلك بأمثلة عملية من سابقة أعمالك (Portfolio).</span>
+                        </div>
+                    </div>
+                    <div class="flex items-center bg-emerald-50 p-3 rounded-lg border border-emerald-100">
+                        <div class="text-2xl font-black text-emerald-600 w-12 text-center">E</div>
+                        <div>
+                            <strong class="text-gray-900">Experience (الخبرة):</strong> <span class="text-gray-700">اختم بذكر خبرتك والأدوات التي تستخدمها لتنفيذ هذا الحل.</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- القسم الثالث: قواعد ذهبية -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-emerald-500 pb-2 mb-4">3. قواعد ذهبية لاقتناص المشاريع</h2>
+                <ul class="space-y-4 text-gray-700">
+                    <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 left-border-green">
+                        <strong class="text-gray-900">ركز على العميل وليس عليك:</strong> السبب الأول لرفض العروض هو التركيز على إنجازاتك الشخصية وتجاهل مشكلة العميل.
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 left-border-green">
+                        <strong class="text-gray-900">السرعة والوضوح:</strong> إذا كان العميل في عجلة من أمره، فالرد السريع واستخدام الجمل القصيرة الواضحة هو مفتاح القبول.
+                    </li>
+                    <li class="bg-white p-4 rounded-lg shadow-sm border border-gray-200 left-border-green">
+                        <strong class="text-gray-900">اسأل لتفهم:</strong> إذا كان وصف الوظيفة غير واضح، من الاحترافية أن تطرح أسئلة توضيحية بأدب داخل عرضك.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- القسم الرابع: الخاتمة الاحترافية -->
+            <section>
+                <h2 class="text-2xl font-bold text-gray-800 border-b-2 border-emerald-500 pb-2 mb-4">4. ترتيب الخاتمة القوية (The Ending)</h2>
+                <div class="bg-gray-800 text-gray-100 p-6 rounded-xl shadow-inner text-left" dir="ltr">
+                    <p class="leading-relaxed font-mono">
+                        1. "I’m confident I can help you achieve your goals." <br>
+                        <span class="text-gray-400 text-sm ml-4">↳ التأكيد على الثقة في الحل.</span><br><br>
+                        
+                        2. "Let’s set up a time to discuss your project." <br>
+                        <span class="text-gray-400 text-sm ml-4">↳ دعوة لاتخاذ إجراء (Call to Action).</span><br><br>
+                        
+                        3. "Looking forward to connecting with you." <br>
+                        <span class="text-gray-400 text-sm ml-4">↳ جملة ختامية مهذبة ورسمية.</span><br><br>
+                        
+                        4. "PS: My schedule fills up fast, so reach out soon." <br>
+                        <span class="text-yellow-400 text-sm ml-4">↳ خلق الاستعجال (Urgency) كخطوة أخيرة.</span>
+                    </p>
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    </div>
+</body>
+</html>
