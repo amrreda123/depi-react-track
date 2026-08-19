@@ -3,6 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+    --orange:#f7941d;
+    --green:#a4cc3f;
+    --darkgreen:#55786a;
+    --dark:#3d5d50;
+    --white:#fff;
+    --black:#000;
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -443,6 +451,133 @@ nav ul li a:hover {
     border-bottom: 1px solid #a4cc3f;
     padding-bottom: 2px;
 }
+/* Testimonials Section Styles */
+.testimonials {
+    padding: 60px 0;
+    background-color: #fcfcfc;
+}
+
+.testimonials .section-title {
+    color: #f7941d;
+    font-size: 60px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.testimonials-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+}
+
+.testimonial-item {
+    flex: 1;
+}
+
+.testimonial-info .quote {
+    color: #666;
+    font-size: 20px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.testimonial-info .author {
+    color: #a4cc3f;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.testimonial-info .author::before {
+    content: "";
+    display: block;
+    width: 45px;
+    height: 3px;
+    margin: 0 auto 25px auto;
+    background-color: #a4cc3f;
+}
+.testimonial-item img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+/* Contact Us Section Styles */
+.contact-us {
+    background: linear-gradient(to right, #fcfaf5 50%, #ffffff 50%);
+    padding: 60px 0;
+}
+
+.contact-wrapper {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.contact-image {
+    width: 50%;
+}
+
+.contact-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.contact-form-wrapper {
+    width: 50%;
+    padding: 20px;
+}
+
+.contact-form-wrapper .section-title {
+    color: #f7941d;
+    font-size: 45px;
+    margin-bottom: 30px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form .form-row {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-form .form-row input {
+    width: 50%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    font-size: 15px;
+    color: #666;
+    outline: none;
+}
+
+.contact-form textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.contact-form button {
+    background-color: #a4cc3f;
+    color: #fff;
+    border: none;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    width: fit-content;
+}
+
 /* Footer Styles */
 footer {
     padding: 30px 0;
