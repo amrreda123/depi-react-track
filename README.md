@@ -104,7 +104,9 @@ depi-react-track/
 │   ├── 📂 Week 1 - Session 1/
 │   ├── 📂 Week 2 - Session 2/
 │   ├── 📂 Week 3 - Session 3/
-│   └── 📂 Week 4 - Session 4/
+│   ├── 📂 Week 4 - Session 4/
+│   ├── 📂 Week 5 - Session 5/
+│   └── 📂 Week 6 - Seesion 6/
 │
 └── 📄 README.md              # You are here!
 ```

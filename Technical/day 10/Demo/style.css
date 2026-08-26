@@ -1,0 +1,36 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.one{
+  width: 20%;
+  height: 150px;
+  background-color: cadetblue;
+  border: 2px solid black;
+}
+.two{
+  width: 20%;
+  height: 150px;
+  background-color: blueviolet;
+  border: 2px solid black;
+}
+.three{
+  width: 20%;
+  height: 150px;
+  background-color: brown;
+  border: 2px solid black;
+}
+
+.box{
+  border: 3px solid blue;
+  /* height: 600px; */
+  /* =============================== */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  /* align-content: center; */
+  /* gap: 5px; */
+}
