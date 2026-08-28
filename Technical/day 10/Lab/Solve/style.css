@@ -1,0 +1,419 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(rgba(0, 30, 70, 0.5), rgba(0, 30, 70, 0.5)), url("./image/home-new.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+/* ===== NAVBAR ===== */
+.nav-bg {
+    background-color: rgba(0, 0, 0, 0.15);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    padding: 0 3%;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.logo img {
+    width: 140px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    margin-left: 50px;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.floating-customize {
+    position: fixed;
+    right: 0;
+    top: 300px;
+    background-color: #fff;
+    color: #333;
+    padding: 10px 15px;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px 0 0 4px;
+    box-shadow: -2px 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e2e2e2;
+    border-right: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    z-index: 100;
+}
+
+.badge {
+    position: absolute;
+    top: -10px;
+    right: -14px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 50%;
+    padding: 1px 5px;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.2;
+    min-width: 16px;
+    text-align: center;
+}
+
+/* ===== HERO SECTION ===== */
+.hero-section {
+    padding: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero-title {
+    font-size: 65px;
+    font-weight: 700;
+    color: #fff;
+    line-height: 1.1;
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+    margin-bottom: 45px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.hero-button {
+    background-color: #fff;
+    color: #000;
+    border: 2px solid #fff;
+    padding: 14px 35px;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.hero-button.btn-outline {
+    background-color: transparent;
+    color: #fff;
+}
+
+.hero-button:hover {
+    background-color: #000;
+    border: 2px solid #000;
+    color: #fff;
+}
+.hero-button.btn-outline:hover {
+    background-color: #fff;
+    border: 2px solid #fff;
+    color: #000;
+}
+.floating-cart {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #0088cc;
+    color: #fff;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 22px;
+    cursor: pointer;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 100;
+}
+
+.floating-cart-badge {
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    background-color: #17c162;
+    color: #fff;
+    font-size: 11px;
+    font-weight: bold;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== Client Logos ===== */
+.client-logos{
+    padding: 50px;
+}
+.logos-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.logos-container img{
+    width: 130px;
+    opacity: 0.8;
+}
+.logos-container img:hover{
+    opacity: 1;
+}
+.logos-container i {
+    color: #ccc; 
+    font-size: 20px;
+    cursor: pointer;
+}
+/* ===== Promotional Cards ===== */
+.promo-section {
+    padding: 50px 3%;
+}
+.promo-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.promo-card {
+    flex: 1;
+    height: 480px;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    padding: 50px 30px;
+    position: relative;
+}
+
+.promo-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.85) 0%, rgba(0,0,0,0.2) 100%);
+    pointer-events: none;
+}
+
+.promo-content {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+}
+
+.promo-content h2 {
+    font-size: 26px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.promo-content p {
+    font-size: 15px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.promo-btn {
+    background-color: #fff;
+    color: #000;
+    padding: 12px 24px;
+    border: none;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.promo-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
+
+/* Specific Card Backgrounds */
+.card-1 {
+    background-image: url("./image/women-fashion-free-img.jpg");
+}
+.card-2 {
+    background-image: url("./image/men-fashion-free-img.jpg");
+}
+.card-3 {
+    background-image: url("./image/footwear-free-img.jpg");
+}
+/*  Featured Products */
+.featured-products {
+    padding: 50px 3%;
+    margin: 40px 0 0 0;
+    background-color: #F7F7F7;
+}
+.section-title {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-title h2 {
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.title-line {
+    width: 70px;
+    height: 2px;
+    background-color: #007bff;
+    margin: 0 auto;
+}
+.products-flex{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.product-card {
+    width: calc(20% - 16px);
+    margin-bottom: 30px;
+}
+.product-image {
+    width: 100%;
+    position: relative;
+}
+.product-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Sale Badge & Cart Icon */
+.sale-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #fff;
+    color: #333;
+    padding: 3px 10px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: 600;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+.cart-icon-overlay {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.product-card:hover .cart-icon-overlay {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Product Info */
+.product-info {
+    padding-top: 15px;
+}
+.product-info h3 {
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+.category {
+    font-size: 13px;
+    color: #777;
+    display: block;
+    margin-bottom: 8px;
+}
+.price {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+.old-price {
+    text-decoration: line-through;
+    color: #999;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+/* Swatches Layout */
+.color-swatches {
+    display: flex;
+    gap: 8px;
+}
+.swatch {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    display: inline-block;
+    cursor: pointer;
+}
+
+/* ===== Color Swatches (Featured Products) ===== */
+.color-blue { background-color: #1e73be; }
+.color-green { background-color: #81d742; }
+.color-orange { background-color: #d15c2d; }
+.color-black { background-color: #000000; }
+.color-gold { background-color: #b7894c; }
+.color-cyan { background-color: #38b4c0; }
+.color-mustard { background-color: #efb015; }
+.color-purple { background-color: #b823b2; }
