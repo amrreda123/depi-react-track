@@ -417,3 +417,68 @@ nav ul li a {
 .color-cyan { background-color: #38b4c0; }
 .color-mustard { background-color: #efb015; }
 .color-purple { background-color: #b823b2; }
+
+/* ===== Limited Time Offer ===== */
+.limited-time-offer {
+    background-image: url("./image/banner-03.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 500px;
+    margin-top: 60px;
+}
+
+.limited-time-offer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 3%;
+}
+
+.limited-offer-content {
+    max-width: 500px;
+    color: #fff;
+}
+
+.limited-offer-content h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.limited-offer-content h2 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 25px;
+}
+
+.limited-offer-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.limited-offer-content h3 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.shop-now-btn {
+    display: inline-block;
+    background-color: #fff;
+    color: #000;
+    padding: 14px 35px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.shop-now-btn:hover {
+    background-color: #000;
+    color: #fff;
+}
