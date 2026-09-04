@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPI - Assignment 7: Portfolio Building (Amr Reda)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-teal: #008080;
+            --dark-teal: #0d5959;
+            --accent-blue: #0284c7;
+            --light-blue-bg: #eff6ff;
+            --table-border: #67e8f9;
+            --table-header-bg: #f0fdfa;
+            --text-dark: #1e293b;
+            --text-muted: #475569;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', 'Cairo', sans-serif;
+            background-color: #f1f5f9;
+            color: var(--text-dark);
+            padding: 24px 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* Floating action bar for easy PDF export */
+        .action-bar {
+            position: sticky;
+            top: 12px;
+            z-index: 999;
+            margin-bottom: 16px;
+            display: flex;
+            gap: 12px;
+            background: white;
+            padding: 10px 20px;
+            border-radius: 9999px;
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #e2e8f0;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 10px 20px;
+            border-radius: 9999px;
+            font-weight: 700;
+            font-size: 14px;
+            text-decoration: none;
+            cursor: pointer;
+            border: none;
+            transition: all 0.2s ease;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #0284c7, #0d5959);
+            color: white;
+            box-shadow: 0 4px 12px rgba(2, 132, 199, 0.3);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 6px 16px rgba(2, 132, 199, 0.4);
+        }
+
+        .btn-outline {
+            background: #f8fafc;
+            color: #334155;
+            border: 1px solid #cbd5e1;
+        }
+
+        .btn-outline:hover {
+            background: #f1f5f9;
+        }
+
+        /* Sheet styled to mimic exact official assignment layout & A4 proportion */
+        .page-sheet {
+            background: #ffffff;
+            width: 100%;
+            max-width: 820px;
+            min-height: 1120px;
+            padding: 38px 45px 32px 45px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.08), 0 8px 10px -6px rgba(0, 0, 0, 0.04);
+            border-radius: 6px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Top Bar & Logos */
+        .top-decor-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 12px;
+            background: linear-gradient(90deg, #0e7490 0%, #0d9488 50%, #14b8a6 100%);
+            border-top-left-radius: 6px;
+            border-top-right-radius: 6px;
+        }
+
+        .header-logos {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1.5px solid #e2e8f0;
+            padding-bottom: 14px;
+            margin-bottom: 14px;
+        }
+
+        .logo-box {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo-depi {
+            font-size: 13px;
+            font-weight: 800;
+            color: #0d5959;
+            text-align: left;
+            line-height: 1.25;
+        }
+
+        .logo-depi span {
+            display: block;
+            font-size: 11px;
+            font-weight: 600;
+            color: #0284c7;
+        }
+
+        .header-title-center {
+            text-align: center;
+        }
+
+        .header-title-center h3 {
+            font-size: 14px;
+            font-weight: 800;
+            letter-spacing: 0.8px;
+            color: #0f172a;
+            text-transform: uppercase;
+        }
+
+        .header-title-center span {
+            font-size: 12px;
+            font-weight: 700;
+            color: #64748b;
+        }
+
+        .logo-gov {
+            font-family: 'Cairo', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            color: #0d5959;
+            text-align: right;
+            line-height: 1.3;
+        }
+
+        /* Assignment Sub-headers */
+        .session-tag {
+            color: #008080;
+            font-size: 12px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            margin-bottom: 2px;
+        }
+
+        .assignment-main-title {
+            color: #0369a1;
+            font-size: 23px;
+            font-weight: 900;
+            line-height: 1.2;
+        }
+
+        .assignment-subtitle {
+            color: #1e293b;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        /* Student Info Table */
+        .student-info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 14px;
+        }
+
+        .student-info-table th, 
+        .student-info-table td {
+            border: 1.5px solid var(--table-border);
+            padding: 8px 14px;
+            text-align: left;
+        }
+
+        .student-info-table th {
+            width: 25%;
+            font-size: 12.5px;
+            font-weight: 800;
+            color: #008080;
+            background-color: #f8fafc;
+        }
+
+        .student-info-table td {
+            width: 25%;
+            font-size: 13.5px;
+            font-weight: 700;
+            color: #0f172a;
+            background-color: #ffffff;
+        }
+
+        /* Task Box */
+        .task-box {
+            background-color: var(--light-blue-bg);
+            border: 1px solid #bfdbfe;
+            border-radius: 4px;
+            padding: 10px 14px;
+            margin-bottom: 10px;
+        }
+
+        .task-box-title {
+            color: #0284c7;
+            font-size: 13.5px;
+            font-weight: 800;
+            margin-bottom: 3px;
+        }
+
+        .task-box-text {
+            color: #334155;
+            font-size: 12px;
+            line-height: 1.45;
+        }
+
+        /* Steps */
+        .steps-box {
+            margin-bottom: 14px;
+        }
+
+        .steps-title {
+            color: #008080;
+            font-size: 13px;
+            font-weight: 800;
+            margin-bottom: 4px;
+        }
+
+        .steps-list {
+            list-style: none;
+            counter-reset: steps-counter;
+            padding-left: 0;
+            font-size: 11.5px;
+            color: #475569;
+            line-height: 1.45;
+        }
+
+        .steps-list li {
+            counter-increment: steps-counter;
+            position: relative;
+            padding-left: 18px;
+            margin-bottom: 3px;
+        }
+
+        .steps-list li::before {
+            content: counter(steps-counter) ".";
+            position: absolute;
+            left: 0;
+            font-weight: 700;
+            color: #0284c7;
+        }
+
+        /* Main Form Table */
+        .main-form-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 14px;
+        }
+
+        .main-form-table td {
+            border: 1.5px solid var(--table-border);
+            padding: 10px 14px;
+            vertical-align: top;
+        }
+
+        .col-label {
+            width: 28%;
+            background-color: #f8fafc;
+            color: #008080;
+            font-weight: 800;
+            font-size: 12.5px;
+            line-height: 1.3;
+        }
+
+        .col-value {
+            width: 72%;
+            background-color: #ffffff;
+            font-size: 12px;
+            color: #1e293b;
+            line-height: 1.5;
+        }
+
+        .portfolio-link-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+            background: #eff6ff;
+            border: 1px solid #93c5fd;
+            padding: 4px 10px;
+            border-radius: 6px;
+            color: #1d4ed8;
+            font-weight: 700;
+            text-decoration: none;
+            font-size: 12.5px;
+        }
+
+        .portfolio-link-badge:hover {
+            background: #dbeafe;
+        }
+
+        .usp-quote {
+            background: #f0fdf4;
+            border-left: 3.5px solid #16a34a;
+            padding: 6px 10px;
+            border-radius: 0 4px 4px 0;
+            color: #166534;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.45;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 6px;
+        }
+
+        .skill-group {
+            font-size: 11.5px;
+        }
+
+        .skill-group strong {
+            color: #0f172a;
+            display: inline-block;
+            min-width: 110px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: #f1f5f9;
+            color: #334155;
+            padding: 1.5px 7px;
+            border-radius: 4px;
+            font-size: 11px;
+            font-weight: 600;
+            margin: 1px;
+            border: 1px solid #e2e8f0;
+        }
+
+        .tag-accent {
+            background: #eff6ff;
+            color: #1d4ed8;
+            border-color: #bfdbfe;
+        }
+
+        /* Project Samples Items */
+        .project-sample {
+            margin-bottom: 8px;
+            padding-bottom: 8px;
+            border-bottom: 1px dashed #cbd5e1;
+        }
+
+        .project-sample:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .project-sample-title {
+            font-weight: 800;
+            color: #0f172a;
+            font-size: 12.5px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-bottom: 2px;
+        }
+
+        .project-context {
+            font-size: 10.5px;
+            color: #0284c7;
+            font-weight: 700;
+            background: #e0f2fe;
+            padding: 1px 7px;
+            border-radius: 9999px;
+        }
+
+        .project-desc {
+            font-size: 11px;
+            color: #475569;
+            line-height: 1.4;
+            margin-bottom: 3px;
+        }
+
+        .project-tech {
+            font-size: 10.5px;
+            color: #64748b;
+        }
+
+        /* Submission Note */
+        .submission-note {
+            font-size: 12px;
+            color: #008080;
+            font-weight: 700;
+            margin-top: 4px;
+            margin-bottom: 18px;
+        }
+
+        .submission-note strong {
+            color: #0f172a;
+        }
+
+        /* Footer */
+        .sheet-footer {
+            border-top: 2px solid #008080;
+            padding-top: 8px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 11px;
+            font-weight: 700;
+            color: #008080;
+        }
+
+        /* Print Media Styles */
+        @media print {
+            body {
+                background: white !important;
+                padding: 0 !important;
+            }
+
+            .action-bar {
+                display: none !important;
+            }
+
+            .page-sheet {
+                box-shadow: none !important;
+                border-radius: 0 !important;
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 18px 24px !important;
+                min-height: auto !important;
+            }
+
+            @page {
+                size: A4 portrait;
+                margin: 8mm 10mm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Floating Tool Bar (Hidden when printed) -->
+    <div class="action-bar no-print">
+        <button class="btn btn-primary" onclick="window.print()">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 6 2 18 2 18 9"></polyline>
+                <path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"></path>
+                <rect x="6" y="14" width="12" height="8"></rect>
+            </svg>
+            <span>طباعة / حفظ كملف PDF</span>
+        </button>
+        <a href="https://elhandaza-portfolio.vercel.app/" target="_blank" class="btn btn-outline">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                <polyline points="15 3 21 3 21 9"></polyline>
+                <line x1="10" y1="14" x2="21" y2="3"></line>
+            </svg>
+            <span>معاينة البورتفوليو لايف</span>
+        </a>
+    </div>
+
+    <!-- Official Assignment Form Sheet -->
+    <div class="page-sheet">
+        <div class="top-decor-bar"></div>
+
+        <div>
+            <!-- Header Logos and Assignment Info -->
+            <div class="header-logos">
+                <div class="logo-box">
+                    <div class="logo-depi">
+                        DEPI
+                        <span>رواد مصر الرقمية</span>
+                    </div>
+                </div>
+
+                <div class="header-title-center">
+                    <h3>DEPI GENERAL | ASSIGNMENT 1</h3>
+                    <span>SESSION 1 ASSIGNMENT</span>
+                </div>
+
+                <div class="logo-gov">
+                    وزارة الاتصالات<br>وتكنولوجيا المعلومات
+                </div>
+            </div>
+
+            <!-- Titles -->
+            <div class="session-tag">SESSION 1 ASSIGNMENT</div>
+            <h1 class="assignment-main-title">Portfolio Building</h1>
+            <h2 class="assignment-subtitle">Create Your Professional Portfolio</h2>
+
+            <!-- Student Info Table -->
+            <table class="student-info-table">
+                <tr>
+                    <th>Student Name</th>
+                    <td>Amr Reda Mohamed</td>
+                    <th>Group Code</th>
+                    <td>QAL5_SWD2_S1</td>
+                </tr>
+            </table>
+
+            <!-- Your Task Box -->
+            <div class="task-box">
+                <div class="task-box-title">Your Task</div>
+                <div class="task-box-text">
+                    Create a professional portfolio that clearly presents your specialization, skills, unique value, and strongest work samples to potential clients.
+                </div>
+            </div>
+
+            <!-- Steps Summary -->
+            <div class="steps-box">
+                <div class="steps-title">Complete the task in 3 steps:</div>
+                <ol class="steps-list">
+                    <li><strong>Choose one portfolio format:</strong> PDF, personal website, or a portfolio platform.</li>
+                    <li><strong>Include your details:</strong> name & professional title, short About section, USP, key skills/services, and 2-4 strong project samples.</li>
+                    <li><strong>Review your portfolio before submitting:</strong> keep it clear and relevant, use only best work, and ensure all links work.</li>
+                </ol>
+            </div>
+
+            <!-- Main Form Content Table -->
+            <table class="main-form-table">
+                <tr>
+                    <td class="col-label">Portfolio Format</td>
+                    <td class="col-value">
+                        <strong>Personal Website / Interactive Web Application</strong> (Modern Next.js & Tailwind CSS portfolio)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Portfolio Link</td>
+                    <td class="col-value">
+                        <a href="https://elhandaza-portfolio.vercel.app/" target="_blank" class="portfolio-link-badge">
+                            🔗 https://elhandaza-portfolio.vercel.app/
+                        </a>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Professional Title</td>
+                    <td class="col-value">
+                        <strong>Backend Developer | PHP & Laravel Specialist</strong> (Full-Stack Competence)
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">My USP</td>
+                    <td class="col-value">
+                        <div class="usp-quote">
+                            "I don't just write scripts; I engineer robust, scalable backend architectures and high-performance RESTful APIs prioritizing SOLID principles, clean code, and database optimization. Additionally, as an active tech educator behind <strong>ElHandaza</strong>, I combine deep technical precision with the ability to communicate and deliver clear, maintainable solutions."
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Main Skills / Services</td>
+                    <td class="col-value">
+                        <div class="skills-grid">
+                            <div class="skill-group">
+                                <strong>Core Backend:</strong>
+                                <span class="tag tag-accent">PHP</span>
+                                <span class="tag tag-accent">Laravel</span>
+                                <span class="tag tag-accent">MySQL</span>
+                                <span class="tag tag-accent">RESTful APIs</span>
+                                <span class="tag tag-accent">WebSockets</span>
+                                <span class="tag">Redis</span>
+                            </div>
+                            <div class="skill-group">
+                                <strong>Architecture:</strong>
+                                <span class="tag">Clean Architecture</span>
+                                <span class="tag">SOLID Principles</span>
+                                <span class="tag">Design Patterns</span>
+                                <span class="tag">Database Optimization</span>
+                                <span class="tag">MVC</span>
+                            </div>
+                            <div class="skill-group">
+                                <strong>Frontend & Tools:</strong>
+                                <span class="tag">React</span>
+                                <span class="tag">Next.js</span>
+                                <span class="tag">Livewire</span>
+                                <span class="tag">Tailwind CSS</span>
+                                <span class="tag">Git & GitHub</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Postman</span>
+                            </div>
+                            <div class="skill-group">
+                                <strong>Services Offered:</strong>
+                                Multi-Tenant SaaS Development, Custom RESTful API Engineering, Database Schema Design & Optimization, Payment Gateways & Role-Based Access Control (RBAC).
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-label">Selected Work Samples</td>
+                    <td class="col-value">
+                        <!-- Project 1 -->
+                        <div class="project-sample">
+                            <div class="project-sample-title">
+                                <span>1. SmartMenu System (SaaS)</span>
+                                <span class="project-context">NTI Graduation Project</span>
+                            </div>
+                            <div class="project-desc">
+                                Multi-tenant SaaS digital menu platform with real-time order tracking, comprehensive database architecture, and personalized smart menu recommendations using Gemini AI.
+                            </div>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> Laravel, React, MySQL, WebSockets, Google Gemini API
+                            </div>
+                        </div>
+
+                        <!-- Project 2 -->
+                        <div class="project-sample">
+                            <div class="project-sample-title">
+                                <span>2. ShopZone Multi-Vendor Platform</span>
+                                <span class="project-context">MEC Academy Graduation Project</span>
+                            </div>
+                            <div class="project-desc">
+                                Multi-vendor e-commerce marketplace with interactive dashboards, Spatie role-based access control (RBAC), secure payment gateway, and asynchronous background email queues.
+                            </div>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> Laravel, Livewire, Tailwind CSS, MySQL, Spatie Permissions
+                            </div>
+                        </div>
+
+                        <!-- Project 3 -->
+                        <div class="project-sample">
+                            <div class="project-sample-title">
+                                <span>3. Laravel E-Commerce Platform</span>
+                                <span class="project-context">GDG On Campus Zagazig</span>
+                            </div>
+                            <div class="project-desc">
+                                Specialized book e-commerce platform with enterprise-grade authentication and authorization workflows, featuring heavily optimized database queries for minimal latency.
+                            </div>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> Laravel, MySQL, Blade Engine, Authentication & Authorization
+                            </div>
+                        </div>
+
+                        <!-- Project 4 -->
+                        <div class="project-sample">
+                            <div class="project-sample-title">
+                                <span>4. 3al Bab (ع الباب)</span>
+                                <span class="project-context">Freelance Client Project</span>
+                            </div>
+                            <div class="project-desc">
+                                Modern service and delivery marketplace connecting consumers directly with on-demand service providers, featuring real-time tracking and intuitive management dashboards.
+                            </div>
+                            <div class="project-tech">
+                                <strong>Tech Stack:</strong> React, JavaScript (ES6+), Modern UI/UX, Dashboard Systems
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- What to submit notice -->
+            <div class="submission-note">
+                <strong>What to submit:</strong> Upload your portfolio as a PDF, or submit a shareable portfolio link with view access.
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="sheet-footer">
+            <span>Skills for Professional Freelancers</span>
+            <span>1</span>
+        </div>
+    </div>
+
+</body>
+</html>

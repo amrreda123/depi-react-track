@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./grid-based-system.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body style="font-size: 30px">
+  <div class="row">
+    <header class="box-12 border">header</header>
+    <section class="row box-12">
+      <aside class="box-3 border">1</aside>
+      <article class="box-6 border">2</article>
+      <nav class="box-3 border">3</nav>
+    </section>
+    <footer class="box-12 border">footer</footer>
+  </div>
+
+  <div class="row">
+    <header class="row box-12">
+      <div class="border box-3">header1</div>
+      <div class="border box-9">header2</div>
+    </header>
+    <section class="row box-12">
+      <div class="box-4 border">section1</div>
+      <div class="box-4 border">section2</div>
+      <div class="box-4 border">section3</div>
+    </section>
+    <footer class="row box-12">
+      <div class="box-6 border">footer1</div>
+      <div class="box-6 border">footer2</div>
+    </footer>
+  </div>
+
+  <div class="row">
+    <div class="box-12 box-md-3 box-lg-3 border">1</div>
+    <div class="box-12 box-md-9 box-lg-6 border">2</div>
+    <div class="box-12 box-md-12 box-lg-3 border">3</div>
+  </div>
+
+  <div class="row">
+    <div class="box-12 box-md-3 border test">1</div>
+    <div class="box-12 box-md-9 box-lg-6 border">2</div>
+    <div class="box-12 box-lg-3 border">3</div>
+  </div>
+</body>
+
+</html>
