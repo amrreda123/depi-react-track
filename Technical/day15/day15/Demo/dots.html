@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      }
+
+      div {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background-color: aliceblue;
+        margin: 0 5px;
+      }
+
+      @keyframes hamada {
+        0% {
+          transform: scale(0.5);
+        }
+        50% {
+          transform: scale(1);
+        }
+        100% {
+          transform: scale(0.5);
+        }
+      }
+
+      @keyframes move {
+        0% {
+          transform: translate(-30px);
+        }
+        100% {
+          transform: translate(30px);
+        }
+      }
+      @keyframes scale {
+        0% {
+          transform: scale(0);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+
+      /* #one{
+      animation: hamada 1s ease infinite forwards 2s;
+    }
+    #two{
+      animation: hamada 1s ease infinite forwards 2.2s;
+    }
+    #three{
+      animation: hamada 1s ease infinite forwards 2.4s;
+    } */
+      #one {
+        animation: scale 1s linear infinite;
+      }
+      #two {
+        animation: move 1s linear infinite;
+      }
+      #three {
+        animation: move 1s linear infinite;
+      }
+      #four {
+        animation: move 1s linear infinite;
+      }
+      #five {
+        animation: scale 1s linear infinite reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="one"></div>
+    <div id="two"></div>
+    <div id="three"></div>
+    <div id="four"></div>
+    <div id="five"></div>
+  </body>
+</html>

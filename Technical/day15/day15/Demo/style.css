@@ -1,0 +1,100 @@
+/* back */
+.t1 {
+  width: 90px;
+  height: 90px;
+  background-color: blueviolet;
+  position: relative;
+  /* top: 200px;
+  left: 200px; */
+  /* transform: translate(200px, 200px); */
+  /* transform: translate(200px); */
+  /* transform: translateX(200px); */
+  /* transform: translateY(200px); */
+  /*=================================== */
+  /* transition-duration: 5s;
+  transition-delay: 0s;
+  transition-property: width;
+  transition-timing-function: linear; */
+  transition: 5s ease all;
+  /*=================================== */
+  /* animation-duration: 5s; */
+  /* animation-name: move; */
+  /* animation-delay: 2s; */
+  /* animation-timing-function: ease; */
+  /* animation-iteration-count: infinite; */
+  /* animation-direction: alternate-reverse; */
+  /* animation-fill-mode: forwards; */
+  /* animation: 5s ease 0s 2 normal forwards move; */
+  /* animation: 5s ease 2 forwards move; */
+  /* animation: 5s move; */
+}
+
+/* go */
+.t1:hover {
+  /* width: 190px;
+  background-color: red; */
+  /* transition-property: background-color; */
+
+  /* transform: rotate(180deg); */
+  /* transform: rotateX(180deg); */
+  /* transform: rotateY(180deg); */
+
+  /* transform: skew(5deg, 50deg); */
+  /* transform: skewX(50deg); */
+  /* transform: skewY(50deg); */
+
+  /* transform: scale(1.5); */
+  /* transform: scaleX(1.5); */
+  /* transform: scaleY(1.5); */
+
+  /* transform: rotate(50deg) scale(1.5); */
+  /* transform: matrix(scaleX, skewX, SkewY,scaleY,translateX, translateY); */
+}
+
+@keyframes move {
+  from {
+    width: 0px;
+    /* display: none; */
+    /* opacity: 0; */
+  }
+  to {
+    width: 190px;
+    /* display: block; */
+    /* opacity: 1; */
+  }
+}
+
+@keyframes move2 {
+  0% {
+    width: 0px;
+  }
+  50% {
+    width: 170px;
+  }
+  100% {
+    width: 190px;
+  }
+}
+
+@keyframes move3 {
+  0% {
+    top: 0;
+    left: 0;
+  }
+  25% {
+    top: 0;
+    left: 200px;
+  }
+  50% {
+    top: 200px;
+    left: 200px;
+  }
+  75% {
+    top: 200px;
+    left: 0px;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+  }
+}
