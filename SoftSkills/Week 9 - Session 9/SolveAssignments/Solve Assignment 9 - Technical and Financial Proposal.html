@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPI Assignment 3 - Technical & Financial Proposal</title>
+    <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .controls {
+            width: 860px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            direction: ltr;
+        }
+
+        .info-badge {
+            font-size: 13px;
+            color: #4b5563;
+            background: #e5e7eb;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-family: 'Segoe UI', sans-serif;
+            font-weight: 600;
+        }
+
+        .btn-print {
+            background-color: #059669;
+            color: white;
+            border: none;
+            padding: 10px 22px;
+            border-radius: 6px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: background-color 0.2s ease;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .btn-print:hover {
+            background-color: #047857;
+        }
+
+        .page-container {
+            width: 860px;
+            background: #ffffff;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            position: relative;
+            padding-bottom: 30px;
+        }
+
+        /* Top Header Color Bar */
+        .top-bars {
+            width: 100%;
+        }
+        .bar-green {
+            height: 14px;
+            background-color: #059669;
+        }
+        .bar-blue {
+            height: 24px;
+            background-color: #1d4ed8;
+        }
+
+        .content-area {
+            padding: 25px 40px;
+        }
+
+        /* Header with logos and title */
+        .header-section {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+            direction: ltr;
+        }
+
+        .logo-placeholder {
+            font-size: 13px;
+            font-weight: bold;
+            color: #065f46;
+            text-align: center;
+            line-height: 1.3;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .assignment-title {
+            text-align: center;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .assignment-title h2 {
+            color: #1e40af;
+            font-size: 18px;
+            font-weight: 800;
+            letter-spacing: 0.5px;
+        }
+
+        .assignment-title span {
+            display: block;
+            color: #1e40af;
+            font-size: 17px;
+            font-weight: 800;
+        }
+
+        .mcit-logo {
+            text-align: right;
+            font-size: 13px;
+            font-weight: bold;
+            color: #1f2937;
+            line-height: 1.3;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        /* Sub-Header */
+        .session-tag {
+            color: #059669;
+            font-size: 13px;
+            font-weight: 800;
+            text-transform: uppercase;
+            margin-bottom: 4px;
+            font-family: 'Segoe UI', sans-serif;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .main-heading {
+            color: #1e40af;
+            font-size: 22px;
+            font-weight: 800;
+            margin-bottom: 4px;
+            font-family: 'Segoe UI', sans-serif;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .sub-heading {
+            color: #1f2937;
+            font-size: 16px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            font-family: 'Segoe UI', sans-serif;
+            direction: ltr;
+            text-align: left;
+        }
+
+        /* Student Info Box */
+        .info-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 14px;
+            border: 1.5px solid #93c5fd;
+            direction: ltr;
+        }
+
+        .info-table td {
+            padding: 8px 12px;
+            font-size: 13.5px;
+            border: 1.5px solid #93c5fd;
+        }
+
+        .info-table .label {
+            width: 18%;
+            background-color: #ecfdf5;
+            color: #047857;
+            font-weight: 700;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .info-table .value {
+            width: 32%;
+            background-color: #ffffff;
+            font-weight: 700;
+            color: #111827;
+        }
+
+        /* Instruction Box */
+        .task-card {
+            background-color: #eff6ff;
+            border: 1.5px solid #bfdbfe;
+            border-radius: 4px;
+            padding: 10px 14px;
+            margin-bottom: 12px;
+            direction: ltr;
+            text-align: left;
+        }
+
+        .task-card h3 {
+            color: #1e40af;
+            font-size: 13.5px;
+            font-weight: 700;
+            margin-bottom: 3px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .task-card p {
+            color: #374151;
+            font-size: 12.5px;
+            line-height: 1.4;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        /* Steps list */
+        .steps-box {
+            direction: ltr;
+            text-align: left;
+            margin-bottom: 14px;
+        }
+
+        .steps-title {
+            color: #059669;
+            font-size: 13px;
+            font-weight: 700;
+            margin-bottom: 3px;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .steps-list {
+            list-style: none;
+            font-size: 12px;
+            color: #374151;
+            line-height: 1.4;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .steps-list strong {
+            color: #059669;
+        }
+
+        /* Main Data Table */
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            border: 1.5px solid #93c5fd;
+            margin-bottom: 14px;
+            direction: ltr;
+        }
+
+        .data-table td {
+            border: 1.5px solid #93c5fd;
+            padding: 10px 14px;
+            font-size: 13px;
+            vertical-align: top;
+        }
+
+        .data-table .row-title {
+            width: 24%;
+            background-color: #ecfdf5;
+            color: #047857;
+            font-weight: 800;
+            font-family: 'Segoe UI', sans-serif;
+            font-size: 13.5px;
+            text-align: left;
+        }
+
+        .data-table .row-content {
+            width: 76%;
+            background-color: #ffffff;
+            color: #1f2937;
+            line-height: 1.55;
+            text-align: right;
+            direction: rtl;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .data-table .row-content a {
+            color: #2563eb;
+            text-decoration: underline;
+            word-break: break-all;
+            font-size: 12px;
+            direction: ltr;
+            display: inline-block;
+            text-align: left;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .tag-badge {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            font-size: 11px;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-bottom: 4px;
+        }
+
+        .bullet-list {
+            list-style: none;
+            padding: 0;
+            margin: 4px 0;
+        }
+
+        .bullet-list li {
+            position: relative;
+            padding-right: 18px;
+            margin-bottom: 5px;
+            font-size: 12.5px;
+        }
+
+        .bullet-list li::before {
+            content: "▪";
+            position: absolute;
+            right: 0;
+            color: #059669;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        /* Footer Submission Note */
+        .footer-note {
+            font-size: 12.5px;
+            color: #374151;
+            direction: ltr;
+            text-align: left;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        .footer-note strong {
+            color: #059669;
+        }
+
+        /* Print styles */
+        @media print {
+            body {
+                background-color: #ffffff;
+                padding: 0;
+            }
+            .controls {
+                display: none;
+            }
+            .page-container {
+                border: none;
+                box-shadow: none;
+                width: 100%;
+            }
+            .content-area {
+                padding: 10px 25px;
+            }
+            @page {
+                size: A4 portrait;
+                margin: 0.4cm;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="controls">
+        <span class="info-badge">📄 DEPI Soft Skills - Week 9 / Session 3</span>
+        <button class="btn-print" onclick="window.print()">🖨️ طباعة / حفظ كـ PDF</button>
+    </div>
+
+    <div class="page-container">
+        <!-- Colored Header Bars -->
+        <div class="top-bars">
+            <div class="bar-green"></div>
+            <div class="bar-blue"></div>
+        </div>
+
+        <div class="content-area">
+            <!-- Header with Logos -->
+            <div class="header-section">
+                <div class="logo-placeholder">
+                    🏛️ مبادرة مصر الرقمية<br><small style="font-weight: normal; color: #6b7280;">Digital Egypt Pioneers</small>
+                </div>
+                <div class="assignment-title">
+                    <h2>DEPI GENERAL | ASSIGNMENT</h2>
+                    <span>3</span>
+                </div>
+                <div class="mcit-logo">
+                    وزارة الاتصالات<br>وتكنولوجيا المعلومات
+                </div>
+            </div>
+
+            <!-- Titles -->
+            <div class="session-tag">SESSION 3 ASSIGNMENT</div>
+            <h1 class="main-heading">Pricing, Payment, Budgeting, and Proposals</h1>
+            <div class="sub-heading">Create a Technical & Financial Proposal</div>
+
+            <!-- Student Info Table -->
+            <table class="info-table">
+                <tr>
+                    <td class="label">Student Name</td>
+                    <td class="value">عمرو رضا محمد (Amr Reda)</td>
+                    <td class="label">Group Code</td>
+                    <td class="value">QAL5_SWD2_S1</td>
+                </tr>
+            </table>
+
+            <!-- Task Description -->
+            <div class="task-card">
+                <h3>Your Task</h3>
+                <p>Choose one freelance project related to your specialization and prepare a short technical and financial proposal for it using the pricing and proposal principles from the session.</p>
+            </div>
+
+            <!-- Steps -->
+            <div class="steps-box">
+                <div class="steps-title">Complete the task in 3 steps:</div>
+                <ol class="steps-list">
+                    <li><strong>1.</strong> Choose one suitable freelance project and include its link or a short copy of the client brief.</li>
+                    <li><strong>2.</strong> Write the technical part: show that you understand the client need, then define the scope, main deliverables, and timeline.</li>
+                    <li><strong>3.</strong> Write the financial part: set a realistic price, state the pricing method, and add clear payment terms.</li>
+                </ol>
+            </div>
+
+            <!-- Main Data Table -->
+            <table class="data-table">
+                <tr>
+                    <td class="row-title">Project Link / Brief</td>
+                    <td class="row-content">
+                        <div style="direction: ltr; text-align: left; margin-bottom: 6px;">
+                            <strong>Link:</strong> <a href="https://nafezly.com/project/55306-%D8%AA%D8%AD%D8%B3%D9%8A%D9%86-seo-%D8%B4%D8%A7%D9%85%D9%84-%D9%84%D9%85%D8%AA%D8%AC%D8%B1-%D8%A7%D9%84%D9%83%D8%AA%D8%B1%D9%88%D9%86%D9%8A-%D9%85%D9%86-%D8%A7%D9%84%D8%A7%D9%84%D9%81-%D9%84%D9%84%D9%8A%D8%A7%D8%A1" target="_blank">https://nafezly.com/project/55306-تحسين-seo-شامل-لمتجر-الكتروني-من-الالف-للياء</a>
+                        </div>
+                        <p style="font-size: 12.5px; color: #374151;">
+                            <strong>ملخص المشروع (Brief):</strong> يبحث متجر "نكس ستور" الإلكتروني عن متخصص لإجراء تحسين شامل لمحركات البحث (Full SEO Optimization) من الألف للياء لجميع محتويات المتجر (178 منتج، 20 قسم رئيسي، 15 قسم فرعي). المتجر مسجل بالفعل على Google Search Console، والمطلوب استهداف كلمات مفتاحية دقيقة لظهور المنتجات والأقسام في نتائج البحث الأولى بمجرد كتابة اسم المنتج دون الحاجة لكتابة اسم المتجر.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-title">Client Need</td>
+                    <td class="row-content">
+                        <p style="font-size: 12.5px; color: #374151;">
+                            العميل يمتلك متجراً مفهرساً ولكن يعاني من ضعف ظهور المنتجات في نتائج البحث الطبيعية (Organic Search). يحتاج العميل إلى حل تقني وفني يضمن:
+                        </p>
+                        <ul class="bullet-list">
+                            <li>تحسين الـ On-Page والـ Technical SEO لكامل صفحات المتجر (178 منتج + 35 قسم رئيسي وفرعي).</li>
+                            <li>إضافة كلمات مفتاحية غنية ومستهدفة بدقة تناسب نية البحث (Search Intent) للمشترين.</li>
+                            <li>ظهور مباشر للمنتج عند البحث باسمه الصريح (مثل "فيفا 26 سوني 5") في نتائج البحث.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-title">Scope & Deliverables</td>
+                    <td class="row-content">
+                        <ul class="bullet-list">
+                            <li><strong>1. التدقيق الفني الشامل (Technical SEO Audit):</strong> مراجعة ملفات الـ Sitemap و Robots.txt، وفحص سرعة الصفحات، وإضافة Schema Markup مخصصة للمنتجات (Product Rich Snippets).</li>
+                            <li><strong>2. تحسين السيو الداخلي لـ 178 منتج (On-Page SEO):</strong> صياغة العناوين (Meta Titles)، الأوصاف التسويقية (Meta Descriptions)، علامات الصور (Alt Tags)، وتوزيع الكلمات المفتاحية.</li>
+                            <li><strong>3. تحسين صفحات الأقسام (20 قسم رئيسي + 15 قسم فرعي):</strong> ضبط بنية الروابط (URL Structure)، وتنسيق الترويسات (H1, H2, H3)، وإضافة نصوص استهدافية للأقسام.</li>
+                            <li><strong>4. التوافق مع Search Console وإعادة الفهرسة:</strong> حل أخطاء الزحف وتقديم خريطة الموقع المحدثة (Sitemap.xml) لمحركات البحث لسرعة الفهرسة.</li>
+                            <li><strong>5. التقرير النهائي (Final Deliverable Report):</strong> ملف توثيقي يوضح الكلمات المفتاحية المنفذة، نتائج الفحص، وعينات حية لظهور المنتجات.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-title">Timeline</td>
+                    <td class="row-content">
+                        <span class="tag-badge">المدة الإجمالية: 14 يوم عمل (2 أسابيع)</span>
+                        <ul class="bullet-list">
+                            <li><strong>المرحلة الأولى (الأيام 1 - 3):</strong> الفحص الفني، إعداد الكلمات المفتاحية المستهدفة، وضبط بيانات الـ Schema.</li>
+                            <li><strong>المرحلة الثانية (الأيام 4 - 9):</strong> تحسين الـ On-Page والميتا داتا لجميع المنتجات الـ 178 وكافة الأقسام الـ 35.</li>
+                            <li><strong>المرحلة الثالثة (الأيام 10 - 12):</strong> معالجة الأرشفة والفهرسة على Google Search Console وطلب إعادة الزحف.</li>
+                            <li><strong>المرحلة الرابعة (الأيام 13 - 14):</strong> اختبار وفحص ظهور المنتجات وتقديم التقرير النهائي للعميل.</li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-title">Price & Pricing Method</td>
+                    <td class="row-content">
+                        <p style="font-size: 13px; margin-bottom: 4px;">
+                            <strong>السعر الإجمالي:</strong> <span style="color: #059669; font-weight: 800; font-size: 14px;">$150 USD</span> (150 دولار أمريكي)
+                        </p>
+                        <p style="font-size: 12.5px; color: #4b5563;">
+                            <strong>طريقة التسعير (Pricing Method):</strong> <span class="tag-badge" style="background:#ecfdf5; color:#047857;">Milestone-Based / Value-Based Fixed Price</span><br>
+                            تسعير قائم على القيمة المضافة والمراحل المحددة (Milestones)، نظراً لاشتمال المشروع على 178 منتجاً و35 قسماً مع ضمانات واضحة لنتائج البحث والظهور.
+                        </p>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="row-title">Payment Terms</td>
+                    <td class="row-content">
+                        <p style="font-size: 12.5px; margin-bottom: 4px;">
+                            يتم الدفع بأمان عبر نظام حماية الدفع على منصة "نفذلي" مقسماً على 3 دفعات مرحلية (Milestones):
+                        </p>
+                        <ul class="bullet-list">
+                            <li><strong>الدفعة الأولى (30% - $45):</strong> دفعة بدء العمل واعتماد الفحص الفني وخطة الكلمات المفتاحية.</li>
+                            <li><strong>الدفعة الثانية (40% - $60):</strong> بعد إتمام تحسين الـ On-Page لجميع المنتجات والأقسام وإرسال الـ Sitemap.</li>
+                            <li><strong>الدفعة النهائية (30% - $45):</strong> بعد التحقق من نتائج الفهرسة وظهور المنتجات بالبحث واستلام التقرير النهائي.</li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+
+            <!-- Submission instructions -->
+            <div class="footer-note">
+                <strong>What to submit:</strong> Submit the completed technical and financial proposal as a Word or PDF file.
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
