@@ -5,8 +5,8 @@
 
 // var x = 10;
 // function display() {
-//   console.log(x);
-//   var x = 20;
+//     console.log(x);
+//     var x = 20;
 // }
 
 // display();
@@ -19,8 +19,8 @@
 
 // console.log(x);
 
-// for (let i = 0; i < 5; i++) {
-//   // console.log(i);
+// for (var i = 0; i < 5; i++) {
+//   console.log(i);
 // }
 
 // console.log(i);
@@ -54,14 +54,15 @@
 // var x;
 
 // function test() {
-//   console.log(5);
+// //   console.log(5);
+// return 5
 // }
 
-// console.log(test());
+// test()
 //============================
 
-// function sum(x = 1, y = 1) {//default parameter
-//   console.log(x + y);
+// function sum(x = 1, y = 10) {//default parameter
+//     console.log(x + y);
 // }
 
 // sum(); //arguments
@@ -69,7 +70,7 @@
 // sum(1,5); //arguments
 // sum(1, undefined); //arguments
 // sum(1,2,3,4,5,6) //arguments
-// sum(1) //arguments
+// sum(9) //arguments
 // sum('1') //arguments
 // sum(5,4) //arguments
 // sum(8,7) //arguments
@@ -89,16 +90,16 @@
 
 // var x = "word";
 // function display() {
-//   var x = 10;
-//   console.log(x);
+//     var x = 10;
+//     console.log(x);
 // }
 
-// // debugger
+// debugger
 // display();
 // console.log(x);
 
 //*               strict mode
-"use strict";
+// ("use strict");
 // var interface = 10
 // console.log(interface);
 
@@ -110,12 +111,12 @@
 // console.log(x);
 
 //*                 isNaN - isFinite
-//! isNaN
+// //! isNaN
 // console.log(isNaN(5));
 // console.log(isNaN("word"));
 // console.log(isNaN("7"));
 
-//! isFinite
+// //! isFinite
 // console.log(isFinite('7'));
 
 //*              convert string to number
@@ -172,8 +173,6 @@
 // } else {
 //   alert("your number is " + phone);
 // }
-
-
 
 // var phone = prompt("please enter your phone number");
 
