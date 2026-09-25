@@ -1,4 +1,4 @@
-//  var x = 10
+// var x = 10
 
 // x = '20'
 
@@ -44,12 +44,11 @@
 
 // console.log(x);
 
-
 // test()
 
 // function test(){
 //   console.log("test");
-  
+
 // }
 
 // console.log(x);
@@ -64,25 +63,69 @@
 
 // var x = 10
 
-
 // function display() {
+//   // console.log(x);
+//   let x = 20
+//   console.log(x);
 //   console.log(y);
-  
 // }
 
 // display()
-// let y = 20
+// var y = 20
+// console.log(x);
+// // let y = 20
 
-//? local (functional)
-var x = 10
+// //? local (functional)
+// var x = 10
 
-function test() {
-  var x = 20
-  console.log(x);
+// function test() {
+//   var x = 20
+//   console.log(x);
+// }
+
+// test()
+
+//? block scope :
+
+// var z = 50;
+
+// {
+//   console.log(z);
+
+//   var z = 100;
+
+//   console.log(z);
+// }
+
+// console.log(z);
+
+// let w = 50;
+
+// {
+//   // console.log(w);
+
+//   let w = 100;
+//   console.log(w);
+// }
+
+// console.log(w);
+
+console.log(sayHello());
+
+function sayHello() {
+  console.log("Hello");
 }
 
-test()
 
-//? block scope : 
+// 1. مرحلة الإنشاء (الرفع - Hoisting):
+var sayBye = undefined;
+// المحرك قام برفع اسم المتغير فقط وأعطاه القيمة الافتراضية undefined
 
+// 2. مرحلة التنفيذ (تنفيذ الكود سطراً بسطر):
+sayBye();
+// أنت هنا تطلب منه تنفيذ المتغير كأنه دالة، أي كأنك تكتب: undefined()
 
+// 3. التعيين الفعلي للقيمة:
+sayBye = function() { // لم يصل الكود إلى هنا أبداً بسبب الخطأ بالأعلى
+  console.log("Bye!");
+};
