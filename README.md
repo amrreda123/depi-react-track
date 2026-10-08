@@ -91,11 +91,27 @@ I maintain a strict, professional folder structure so that any recruiter or deve
 ```text
 depi-react-track/
 ├── 📁 Technical/             # Tech Track Assignments & Demos (Days 01 - 21)
-│   ├── 📂 day 01 - day 04/   # HTML5 Basics, Media & Forms
-│   ├── 📂 day 05 - day 11/   # CSS3, Flexbox, Grid & Responsive Design
-│   ├── 📂 day 12 - day 14/   # Bootstrap Framework & Grid System
-│   ├── 📂 day 15/            # Advanced CSS Animations
-│   └── 📂 day 16 - day 21/   # JavaScript Fundamentals & Built-in Objects
+│   ├── 📂 day 01/            # Semantic HTML Basics & Page Structure
+│   ├── 📂 day 02/            # HTML Tables, Links & Semantic Tags
+│   ├── 📂 day 03/            # Media Elements, Audio, Video & IFrames
+│   ├── 📂 day 04/            # HTML Forms & Input Validations
+│   ├── 📂 day 05/            # Advanced Forms & Table Layouts
+│   ├── 📂 day 06/            # CSS Fundamentals, Box Model & Selectors
+│   ├── 📂 day 07/            # Modern Layouts: CSS Flexbox
+│   ├── 📂 day 08/            # Modern Layouts: CSS Grid
+│   ├── 📂 day 09/            # Responsive Design & Media Queries
+│   ├── 📂 day 10/            # Advanced CSS Styling & Practical Tasks
+│   ├── 📂 day 11/            # Complex Responsive UI Lab Tasks
+│   ├── 📂 day 12/            # Bootstrap 5 Fundamentals & Grid System
+│   ├── 📂 day 13/            # Bootstrap Components & Responsive Layouts
+│   ├── 📂 day 14/            # Bootstrap Advanced UI Design & Utilities
+│   ├── 📂 day 15/            # Advanced CSS Animations & Keyframes
+│   ├── 📂 day 16/            # Introduction to JavaScript & Syntax
+│   ├── 📂 day 17/            # JS Control Flow, Conditions & Loops
+│   ├── 📂 day 18/            # JS Functions, Scope & Arrays
+│   ├── 📂 day 19/            # JS DOM Manipulation & Event Handling
+│   ├── 📂 day 20/            # JS Built-in Objects & RegExp Patterns
+│   └── 📂 day 21/            # JS Advanced DOM & Interactive Projects
 │
 ├── 📁 SoftSkills/            # Freelancing & Soft Skills (Weeks 01 - 11)
 │   ├── 📂 Week 1 - Session 1/
@@ -121,16 +137,31 @@ depi-react-track/
 ## 📈 Daily Progress & Highlights
 
 <details>
-<summary><b>✨ Click to expand the Daily Log</b></summary>
+<summary><b>✨ Click to expand the Daily Log (Days 01 - 21)</b></summary>
 
 | # | Day | Core Concept | Output | Status |
 |:-:|:---:|:-------------|:------:|:------:|
-| 1 | Day 1 | Semantic HTML Basics & Page Structure | Built a structured webpage | ✅ Done |
-| 2 | Day 2 | Advanced HTML: Tables & Links | Created a Personal Website layout | ✅ Done |
-| 3 | Day 3 | Media Elements & IFrames | Integrated rich media components | ✅ Done |
-| 4 | Day 4 | HTML Forms & Validation | Built comprehensive user inputs | ✅ Done |
-| 5 | Day 5 | CSS Fundamentals & Selectors | Styled web pages efficiently | ✅ Done |
-| 6 | Day 6,7 | Modern CSS: Flexbox & Grid | Built responsive layouts | ✅ Done |
+| 1 | Day 01 | Semantic HTML Basics & Page Structure | Built a structured webpage | ✅ Done |
+| 2 | Day 02 | Advanced HTML: Tables & Links | Created a Personal Website layout | ✅ Done |
+| 3 | Day 03 | Media Elements & IFrames | Integrated rich media components | ✅ Done |
+| 4 | Day 04 | HTML Forms & Validation | Built comprehensive user inputs | ✅ Done |
+| 5 | Day 05 | Advanced Forms & Table Designs | Complex data input forms | ✅ Done |
+| 6 | Day 06 | CSS Fundamentals & Box Model | Styled web pages efficiently | ✅ Done |
+| 7 | Day 07 | Modern Layouts: CSS Flexbox | Built flexible responsive components | ✅ Done |
+| 8 | Day 08 | Modern Layouts: CSS Grid | Complex multi-column grid layouts | ✅ Done |
+| 9 | Day 09 | Responsive Web Design & Media Queries | Mobile-first responsive webpage | ✅ Done |
+| 10 | Day 10 | Advanced CSS Styling & Custom UI | Styled comprehensive landing page | ✅ Done |
+| 11 | Day 11 | Practical CSS UI Integration | Responsive layout task | ✅ Done |
+| 12 | Day 12 | Bootstrap 5 Fundamentals & Grid System | Grid-based responsive interface | ✅ Done |
+| 13 | Day 13 | Bootstrap Components & Responsive Utilities | Integrated Bootstrap layouts | ✅ Done |
+| 14 | Day 14 | Advanced Bootstrap Lab & Custom Themes | Multi-section modern UI | ✅ Done |
+| 15 | Day 15 | Modern CSS Animations & Scroll Effects | Interactive animated elements | ✅ Done |
+| 16 | Day 16 | JavaScript Fundamentals & Data Types | Interactive scripts & logic | ✅ Done |
+| 17 | Day 17 | JavaScript Conditions, Loops & Functions | Algorithmic tasks & validations | ✅ Done |
+| 18 | Day 18 | JavaScript Arrays, Objects & Methods | Data structures handling | ✅ Done |
+| 19 | Day 19 | JavaScript DOM Manipulation & Events | Interactive UI elements | ✅ Done |
+| 20 | Day 20 | JS Built-in Objects & Regular Expressions | RegExp input validation & string parsing | ✅ Done |
+| 21 | Day 21 | Advanced DOM Projects & Dynamic UI | Interactive JavaScript project | ✅ Done |
 
 </details>
 
