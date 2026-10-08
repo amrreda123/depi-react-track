@@ -16,8 +16,8 @@
 
   ![Status](https://img.shields.io/badge/Status-🟢%20Active-brightgreen?style=flat-square)
   ![Track](https://img.shields.io/badge/Track-Front--End%20React-61DAFB?style=flat-square&logo=react)
-  ![Last Updated](https://img.shields.io/badge/Last%20Updated-August%202026-blue?style=flat-square)
-  ![Days Completed](https://img.shields.io/badge/Days%20Completed-7-orange?style=flat-square)
+  ![Last Updated](https://img.shields.io/badge/Last%20Updated-October%202026-blue?style=flat-square)
+  ![Days Completed](https://img.shields.io/badge/Days%20Completed-21-orange?style=flat-square)
 
 </div>
 
@@ -69,10 +69,10 @@ Here is my structured journey through the DEPI React Track. I believe in documen
 | 🧠 | **Prompt Engineering** | ⏳ Pending | ░░░░░░░░░░ |
 | 🏗️ | **HTML5 Essentials** | ✅ Done | ██████████ |
 | 🎨 | **CSS & UI/UX Principles** | ✅ Done | ██████████ |
-| ⚡ | **JavaScript Deep Dive** | ⏳ Pending | ░░░░░░░░░░ |
-| 📘 | **TypeScript** | ⏳ Pending | ░░░░░░░░░░ |
-| 📱 | **Bootstrap Framework** | ⏳ Pending | ░░░░░░░░░░ |
+| 📱 | **Bootstrap Framework** | ✅ Done | ██████████ |
 | 🔄 | **Git & GitHub** | ✅ Done | ██████████ |
+| ⚡ | **JavaScript Deep Dive** | 🔄 In Progress | ██████░░░░ |
+| 📘 | **TypeScript** | ⏳ Pending | ░░░░░░░░░░ |
 | ⚛️ | **React.js Mastery** | ⏳ Pending | ░░░░░░░░░░ |
 | 🛠️ | **Best Practices & Patterns** | ⏳ Pending | ░░░░░░░░░░ |
 | 🚀 | **NodeJS & Express Basics** | ⏳ Pending | ░░░░░░░░░░ |
@@ -80,7 +80,7 @@ Here is my structured journey through the DEPI React Track. I believe in documen
 | 🧪 | **Unit Testing** | ⏳ Pending | ░░░░░░░░░░ |
 | 🏆 | **Capstone Project** | ⏳ Pending | ░░░░░░░░░░ |
 
-> **Overall Progress:** `████░░░░░░░░░░░░░░░░` **~25% Complete**
+> **Overall Progress:** `████████░░░░░░░░` **~50% Complete**
 
 ---
 
@@ -90,23 +90,28 @@ I maintain a strict, professional folder structure so that any recruiter or deve
 
 ```text
 depi-react-track/
-├── 📁 Technical/             # Tech Track Assignments & Demos
-│   ├── 📂 day 1/             # HTML Basics
-│   ├── 📂 day 2/             # Tables & Links
-│   ├── 📂 day 3/             # Media Elements & IFrames
-│   ├── 📂 day 4/             # HTML Forms
-│   ├── 📂 day 5/             # CSS Fundamentals
-│   ├── 📂 day 6/             # CSS Flexbox
-│   ├── 📂 day 7/             # CSS Grid Layouts
-│   └── 📂 day 8/             # Advanced Styling & Practical
+├── 📁 Technical/             # Tech Track Assignments & Demos (Days 01 - 21)
+│   ├── 📂 day 01 - day 04/   # HTML5 Basics, Media & Forms
+│   ├── 📂 day 05 - day 11/   # CSS3, Flexbox, Grid & Responsive Design
+│   ├── 📂 day 12 - day 14/   # Bootstrap Framework & Grid System
+│   ├── 📂 day 15/            # Advanced CSS Animations
+│   └── 📂 day 16 - day 21/   # JavaScript Fundamentals & Built-in Objects
 │
-├── 📁 SoftSkills/            # Non-Technical Assignments
+├── 📁 SoftSkills/            # Freelancing & Soft Skills (Weeks 01 - 11)
 │   ├── 📂 Week 1 - Session 1/
 │   ├── 📂 Week 2 - Session 2/
 │   ├── 📂 Week 3 - Session 3/
 │   ├── 📂 Week 4 - Session 4/
 │   ├── 📂 Week 5 - Session 5/
-│   └── 📂 Week 6 - Seesion 6/
+│   ├── 📂 Week 6 - Seesion 6/
+│   ├── 📂 Week 7 - Session 7/
+│   ├── 📂 Week 8 - Session 8/     # Freelancing Platforms
+│   ├── 📂 Week 9 - Session 9/
+│   ├── 📂 Week 10 - Session 10/   # Negotiation Skills
+│   └── 📂 Week 11 - Session 11/   # Kickstart Your Freelance Profile
+│
+├── 📁 English/               # English Quizzes & Assignments
+│   └── 📂 Quizzes & Assignments/
 │
 └── 📄 README.md              # You are here!
 ```
